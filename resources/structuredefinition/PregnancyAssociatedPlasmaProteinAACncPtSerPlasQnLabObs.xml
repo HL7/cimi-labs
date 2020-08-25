@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="PregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/PregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs"/>
+    <name value="HSPC Pregnancy Associated Plasma Protein AA Cnc Pt Ser Plas"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="PregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs is the Clinical Element Model for standard laboratory test results/observations numeric results. LOINC Code: 32046-5."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs">
+            <path value="Observation"/>
+            <definition value="PregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs is the Clinical Element Model for standard laboratory test results/observations numeric results. LOINC Code:
+            32046-5."/>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="32046-5"/>
+                    <display value="Pregnancy associated plasma protein A [Units/volume] in Serum or Plasma"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.valueQuantity.system">
+            <path value="Observation.valueQuantity.system"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.valueQuantity.code">
+            <path value="Observation.valueQuantity.code"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="m[iU]/L"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcPregnancyAssociatedPlasmaProteinAACncPtSerPlasQnLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

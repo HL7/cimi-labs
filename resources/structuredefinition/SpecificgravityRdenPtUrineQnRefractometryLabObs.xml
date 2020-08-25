@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SpecificgravityRdenPtUrineQnRefractometryLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/SpecificgravityRdenPtUrineQnRefractometryLabObs"/>
+    <name value="HSPC Specificgravity Rden Pt Urine Qn Refractometry Lab Obs"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="SpecificgravityRdenPtUrineQnRefractometryLabObs is a Clinical Element Model for LOINC Code: 5810-7 LOINC Name: Specificgravity:Rden:Pt:Urine:Qn:Refractometry"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs">
+            <path value="Observation"/>
+            <definition value="SpecificgravityRdenPtUrineQnRefractometryLabObs is a Clinical Element Model for LOINC Code: 5810-7 LOINC Name: Specificgravity:Rden:Pt:Urine:Qn:Refractometry"/>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="5810-7"/>
+                    <display value="Specific gravity of Urine by Refractometry"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcSpecificgravityRdenPtUrineQnRefractometryLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

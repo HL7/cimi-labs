@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="ErythrocytesNCncPtSynvfldQnAutomatedcountLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/ErythrocytesNCncPtSynvfldQnAutomatedcountLabObs"/>
+    <name value="HSPC Erythrocytes N Cnc Pt Synvfld Qn Automatedcount Lab Obs"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="ErythrocytesNCncPtSynvfldQnAutomatedcountLabObs is a Clinical Element Model for LOINC Code: 796-3 LOINC Name: Erythrocytes:NCnc:Pt:Synvfld:Qn:Automatedcount"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs">
+            <path value="Observation"/>
+            <definition value="ErythrocytesNCncPtSynvfldQnAutomatedcountLabObs is a Clinical Element Model for LOINC Code: 796-3 LOINC Name: Erythrocytes:NCnc:Pt:Synvfld:Qn:Automatedcount"/>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="796-3"/>
+                    <display value="Erythrocytes [#/volume] in Synovial fluid by Automated count"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.valueQuantity.system">
+            <path value="Observation.valueQuantity.system"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.valueQuantity.code">
+            <path value="Observation.valueQuantity.code"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="10*3/uL"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcErythrocytesNCncPtSynvfldQnAutomatedcountLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

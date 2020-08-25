@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="GranulocytesNCncPtBldQnLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/GranulocytesNCncPtBldQnLabObs"/>
+    <name value="HSPC Granulocytes N Cnc Pt Bld Qn Lab Obs"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="GranulocytesNCncPtBldQnLabObs is a Clinical Element Model for LOINC Code: 30394-1 LOINC Name: Granulocytes:NCnc:Pt:Bld:Qn"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs">
+            <path value="Observation"/>
+            <definition value="GranulocytesNCncPtBldQnLabObs is a Clinical Element Model for LOINC Code: 30394-1 LOINC Name: Granulocytes:NCnc:Pt:Bld:Qn"/>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="30394-1"/>
+                    <display value="Granulocytes [#/volume] in Blood"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs.valueQuantity.system">
+            <path value="Observation.valueQuantity.system"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs.valueQuantity.code">
+            <path value="Observation.valueQuantity.code"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="10*3/uL"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGranulocytesNCncPtBldQnLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcGranulocytesNCncPtBldQnLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

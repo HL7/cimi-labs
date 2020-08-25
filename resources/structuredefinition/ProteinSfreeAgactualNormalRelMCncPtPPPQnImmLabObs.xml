@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="ProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/ProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs"/>
+    <name value="HSPC Protein Sfree Agactual Normal Rel M Cnc Pt PPP"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="ProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs is a Clinical Element Model for LOINC Code: 27821-8 LOINC Name: ProteinS.freeAgactual/Normal:RelMCnc:Pt:PPP:Qn:Imm"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs">
+            <path value="Observation"/>
+            <definition value="ProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs is a Clinical Element Model for LOINC Code: 27821-8 LOINC Name: ProteinS.freeAgactual/Normal:RelMCnc:Pt:PPP:Qn:Imm"/>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="27821-8"/>
+                    <display value="Protein S Free Ag actual/normal in Platelet poor plasma by Immunologic method"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.valueQuantity.system">
+            <path value="Observation.valueQuantity.system"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.valueQuantity.code">
+            <path value="Observation.valueQuantity.code"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="%"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcProteinSfreeAgactualNormalRelMCncPtPPPQnImmLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

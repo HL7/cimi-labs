@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="LabNullFlavor"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/LabNullFlavor"/>
+  <version value="0.01"/>
+  <name value="HSPC Lab Null Flavor"/>
+  <status value="draft"/>
+  <date value="2014-06-25"/>
+  <publisher value="Intermountain Healthcare"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://www.clinicaleleement.com"/>
+    </telecom>
+  </contact>
+  <description value="A list of reasons why a lab result may have no value"/>
+  <copyright value="IHC"/>
+  <compose>
+    <include>
+      <system value="http://ihc.org/fhir/Namespace/cks"/>
+      <concept>
+        <code value="160594"/>
+        <display value="Canceled per nurse"/>
+        <!-- <definition value="A Lab Coded Comment:  Canceled per nurse"/> -->
+      </concept>
+      <concept>
+        <code value="160595"/>
+        <display value="Canceled per physician"/>
+        <!-- <definition value="A Lab Coded Comment:  Canceled per physician"/> -->
+      </concept>
+      <concept>
+        <code value="11981"/>
+        <display value="Cancelled"/>
+        <!-- <definition value="A Lab Coded Comment:  Canceled"/> -->
+      </concept>
+      <concept>
+        <code value="178906"/>
+        <display value="Cancelled on HIS"/>
+        <!-- <definition value="A Lab Coded Comment:  Cancelled on HIS"/> -->
+      </concept>
+      <concept>
+        <code value="2582"/>
+        <display value="Color Interference"/>
+        <!-- <definition value="A Lab Coded Comment:  Unable to perform - color interference"/> -->
+      </concept>
+      <concept>
+        <code value="108178"/>
+        <display value="Contaminated"/>
+        <!-- <definition value="A Lab Coded Comment:  Contaminated"/> -->
+      </concept>
+      <concept>
+        <code value="1889"/>
+        <display value="Duplicate request"/>
+        <!-- <definition value="A Lab Coded Comment:  Duplicate Order"/> -->
+      </concept>
+      <concept>
+        <code value="14865145"/>
+        <display value="Duplicate request, charges credited"/>
+        <!-- <definition value="A Lab Coded Comment:  Duplicate request, charges credited."/> -->
+      </concept>
+      <concept>
+        <code value="14707636"/>
+        <display value="Erroneous patient information provide by requestor, result does not belong to this patient, charge credited and requestor notified."/>
+        <!-- <definition value="A Lab Coded Comment:  Erroneous patient information provide by requestor, does not belong to this patient, charge credited and requestor notified."/> -->
+      </concept>
+      <concept>
+        <code value="2263"/>
+        <display value="Error in Entry"/>
+        <!-- <definition value="A Lab Coded Comment:  Clerical error"/> -->
+      </concept>
+      <concept>
+        <code value="75654"/>
+        <display value="Improper storage of specimen"/>
+        <!-- <definition value="A Lab Coded Comment:  Improper storage of specimen"/> -->
+      </concept>
+      <concept>
+        <code value="160598"/>
+        <display value="Improper tube/specimen type"/>
+        <!-- <definition value="A Lab Coded Comment:  Improper tube/specimen type"/> -->
+      </concept>
+      <concept>
+        <code value="181343"/>
+        <display value="Information Not Available"/>
+        <!-- <definition value="A LabCodedComments:  Information not available"/> -->
+      </concept>
+      <concept>
+        <code value="520567321"/>
+        <display value="Instrument Malfunction"/>
+        <!-- <definition value="A Lab Coded Comment:  Instrument Malfunction"/> -->
+      </concept>
+      <concept>
+        <code value="75662"/>
+        <display value="Interference. Test not resultable."/>
+        <!-- <definition value="A Lab Coded Comment:  Interference. Test not resultable."/> -->
+      </concept>
+      <concept>
+        <code value="14778334"/>
+        <display value="Keystroke Error"/>
+        <!-- <definition value="A Lab Coded Comment:  Keystroke Error"/> -->
+      </concept>
+      <concept>
+        <code value="14707634"/>
+        <display value="Lab error, result does not belong to this patient, charge credited and requestor notified."/>
+        <!-- <definition value="A Lab Coded Comment:  Lab error, does not belong to this patient, charge credited and requestor notified."/> -->
+      </concept>
+      <concept>
+        <code value="155587"/>
+        <display value="Name discrepancy on specimen label"/>
+        <!-- <definition value="A Lab Coded Comment:s  Name on requisition does not match specimen label."/> -->
+      </concept>
+      <concept>
+        <code value="78341"/>
+        <display value="No label on specimen"/>
+        <!-- <definition value="A Lab Coded Comment:  Not Labeled"/> -->
+      </concept>
+      <concept>
+        <code value="75768"/>
+        <display value="No specimen"/>
+        <!-- <definition value="A Lab Coded Comment:  No specimen"/> -->
+      </concept>
+      <concept>
+        <code value="112"/>
+        <display value="Not Applicable"/>
+        <!-- <definition value="A Lab Coded Comment:  Not Applicable"/> -->
+      </concept>
+      <concept>
+        <code value="521261770"/>
+        <display value="Not Measured"/>
+        <!-- <definition value="A Lab Coded Comment:  Not Measured"/> -->
+      </concept>
+      <concept>
+        <code value="75799"/>
+        <display value="Not ordered"/>
+        <!-- <definition value="A Lab Coded Comment:  Not ordered"/> -->
+      </concept>
+      <concept>
+        <code value="105189"/>
+        <display value="Order error"/>
+        <!-- <definition value="A Lab Coded Comment:  Order error"/> -->
+      </concept>
+      <concept>
+        <code value="14707635"/>
+        <display value="Order error by requestor, wrong patient tested, charges credited."/>
+        <!-- <definition value="A Lab Coded Comment:  Order error by requestor, wrong patient tested, charges credited."/> -->
+      </concept>
+      <concept>
+        <code value="14865144"/>
+        <display value="Order error, charges credited."/>
+        <!-- <definition value="A Lab Coded Comment:  Order error, charges credited."/> -->
+      </concept>
+      <concept>
+        <code value="14707637"/>
+        <display value="Order error, wrong test performed, charges credited."/>
+        <!-- <definition value="A Lab Coded Comment:  Order error, wrong test performed, charges credited."/> -->
+      </concept>
+      <concept>
+        <code value="160602"/>
+        <display value="Patient did not return for specimen collection"/>
+        <!-- <definition value="A Lab Coded Comment:  Patient did not return for specimen collection"/> -->
+      </concept>
+      <concept>
+        <code value="75824"/>
+        <display value="Patient discharged"/>
+        <!-- <definition value="A Lab Coded Comment:  Patient discharged"/> -->
+      </concept>
+      <concept>
+        <code value="549"/>
+        <display value="Patient Expired"/>
+        <!-- <definition value="A Lab Coded Comment:  Patient has expired (died)."/> -->
+      </concept>
+      <concept>
+        <code value="75829"/>
+        <display value="Patient refused procedure."/>
+        <!-- <definition value="A Lab Coded Comment:  Patient refused procedure"/> -->
+      </concept>
+      <concept>
+        <code value="105172"/>
+        <display value="Patient unable to collect urine specimen."/>
+        <!-- <definition value="A Lab Coded Comment:  Patient unable to collect urine specimen"/> -->
+      </concept>
+      <concept>
+        <code value="105302"/>
+        <display value="QNS for spun microscopic"/>
+        <!-- <definition value="A Lab Coded Comment:  QNS for spun microscopic"/> -->
+      </concept>
+      <concept>
+        <code value="1099"/>
+        <display value="Quantity not sufficient"/>
+        <!-- <definition value="A Lab Coded Comment:  Quantity not sufficient"/> -->
+      </concept>
+      <concept>
+        <code value="91200"/>
+        <display value="Request credited"/>
+        <!-- <definition value="A Lab Coded Comment:  Request credited"/> -->
+      </concept>
+      <concept>
+        <code value="1917"/>
+        <display value="Specimen clotted"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen clotted"/> -->
+      </concept>
+      <concept>
+        <code value="75998"/>
+        <display value="Specimen does not appear to be adequate for requested assay"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen does not appear to be adequate for requested assay"/> -->
+      </concept>
+      <concept>
+        <code value="76004"/>
+        <display value="Specimen improperly collected"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen improperly collected"/> -->
+      </concept>
+      <concept>
+        <code value="14929681"/>
+        <display value="Specimen lab was missing required information"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen label was missing required information"/> -->
+      </concept>
+      <concept>
+        <code value="76005"/>
+        <display value="Specimen leaked in transit. Request new sample."/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen leaked in transit. Request new sample."/> -->
+      </concept>
+      <concept>
+        <code value="76007"/>
+        <display value="Specimen lost due to laboratory accident"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen lost due to laboratory accident"/> -->
+      </concept>
+      <concept>
+        <code value="160609"/>
+        <display value="Specimen mislabeled"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen mislabeled"/> -->
+      </concept>
+      <concept>
+        <code value="76008"/>
+        <display value="Specimen not collected"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen not collected"/> -->
+      </concept>
+      <concept>
+        <code value="105312"/>
+        <display value="Specimen not received as of 1 month post order. Charges adjusted accordingly."/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen not received as of 1 month post order. Charges adjusted accordingly."/> -->
+      </concept>
+      <concept>
+        <code value="12012"/>
+        <display value="Specimen not received in the lab"/>
+        <!-- <definition value="A Lab Coded Comment:  No specimen received in lab by technologist"/> -->
+      </concept>
+      <concept>
+        <code value="1928"/>
+        <display value="Specimen unacceptable; request new specimen"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen unacceptable; request new specimen"/> -->
+      </concept>
+      <concept>
+        <code value="111070"/>
+        <display value="Specimen Unlabeled - Identification Questionable"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen unlabelled"/> -->
+      </concept>
+      <concept>
+        <code value="1929"/>
+        <display value="Specimen unsatisfactory"/>
+        <!-- <definition value="A Lab Coded Comment:  Specimen unsatisfactory"/> -->
+      </concept>
+      <concept>
+        <code value="155770"/>
+        <display value="Test not performed on formed stools"/>
+        <!-- <definition value="A Lab Coded Comment:  Test not performed on formed stool"/> -->
+      </concept>
+      <concept>
+        <code value="76102"/>
+        <display value="Unable to calculate"/>
+        <!-- <definition value="A Lab Coded Comment:  Unable to calculate"/> -->
+      </concept>
+      <concept>
+        <code value="76103"/>
+        <display value="Unable to determine due to color interference"/>
+        <!-- <definition value="A Lab Coded Comment:  Unable to determine due to color"/> -->
+      </concept>
+      <concept>
+        <code value="105313"/>
+        <display value="Unable to report"/>
+        <!-- <definition value="A Lab Coded Comment:  Unable to report"/> -->
+      </concept>
+      <concept>
+        <code value="105218"/>
+        <display value="Unable to report platelet count due to platelet clumping; platelets appear adequate on smear"/>
+        <!-- <definition value="A Lab Coded Comment:  Unable to report platelet count due to platelet clumping; platelets appear adequate on smear"/> -->
+      </concept>
+      <concept>
+        <code value="138"/>
+        <display value="Unknown"/>
+        <!-- <definition value="A Lab Coded Comment:  Unknown"/> -->
+      </concept>
+      <concept>
+        <code value="76131"/>
+        <display value="Wrong exam ordered."/>
+        <!-- <definition value="A Lab Coded Comment:  Wrong exam ordered."/> -->
+      </concept>
+      <concept>
+        <code value="69109"/>
+        <display value="Wrong Patient"/>
+        <!-- <definition value="A Lab Coded Comment:  Wrong patient"/> -->
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

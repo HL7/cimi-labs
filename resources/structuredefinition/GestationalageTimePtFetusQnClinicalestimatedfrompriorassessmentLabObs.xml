@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="GestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/GestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs"/>
+    <name value="HSPC Gestationalage Time Pt Fetus Qn Clinicalestimatedfrompriorassessment Lab Obs"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="GestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs is a Clinical Element Model for LOINC Code: 53695-3 LOINC Name: Gestationalage:Time:Pt:^Fetus:Qn:Clinical.estimatedfrompriorassessment"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs">
+            <path value="Observation"/>
+            <definition value="GestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs is a Clinical Element Model for LOINC Code: 53695-3 LOINC Name: Gestationalage:Time:Pt:^Fetus:Qn:Clinical.estimatedfrompriorassessment"/>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="53695-3"/>
+                    <display value="Gestational age Estimated from prior assessment"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.valueQuantity.system">
+            <path value="Observation.valueQuantity.system"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.valueQuantity.code">
+            <path value="Observation.valueQuantity.code"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="d"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcGestationalageTimePtFetusQnClinicalestimatedfrompriorassessmentLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

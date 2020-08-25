@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="reportingPriority"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/reportingPriority"/>
+    <version value="0.01"/>
+    <name value="HSPC Reporiting Priority value set"/>
+    <status value="draft"/>
+    <date value="2018-03-29"/>
+    <publisher value="HSPC"/>
+    <description value="Select SNOMED CT codes. The values that describe the level of urgency for reporting observation results to a clinician."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>	
+				<code value ="709122007"/>
+				<display value ="ASAP - ass soon as possible"/>
+			</concept>	
+			<concept>	
+				<code value ="50811001"/>
+				<display value ="Routine"/>
+			</concept>	
+			<concept>	
+				<code value ="49499008"/>
+				<display value ="Stat"/>
+			</concept>	
+			<concept>	
+				<code value ="103391001"/>
+				<display value ="Urgent"/>
+			</concept>
+		</include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="reportingPriority"/>
+  <url value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+  <version value="2.0.0"/>
+  <name value="reportingPriority"/>
+  <title value="Reporting Priority"/>
+  <status value="draft"/>
+  <date value="2018-08-27"/>
+  <publisher value="Healthcare Services Platform Consortium"/>
+  <description value="The set of codes that describe the urgency with which a result should be reported to a clinican."/>
+  <fhirVersion value="3.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <contextType value="resource"/>
+  <context value="Encounter"/>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <element id="Extension:reportingPriority">
+      <path value="Extension"/>
+      <sliceName value="reportingPriority"/>
+      <short value="Extension"/>
+      <definition value="The set of codes that describe the urgency with which a result should be reported to a clinican."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:reportingPriority.id">
+      <path value="Extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Extension:reportingPriority.url">
+      <path value="Extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Extension:reportingPriority.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <short value="Concept - reference to a terminology or just  text"/>
+      <definition value="A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text."/>
+      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+	  <binding>
+	  <strength value="preferred"/>
+		<valueSetReference>
+			<reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriority"/>
+		</valueSetReference>
+	  </binding>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Extension:reportingPriority">
+      <path value="Extension"/>
+      <sliceName value="reportingPriority"/>
+      <definition value="The set of codes that describe the urgency with which a result should be reported to a clinican."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:reportingPriority.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+    </element>
+    <element id="Extension:reportingPriority.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+	  <binding>
+	  <strength value="preferred"/>
+		<valueSetReference>
+			<reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriority"/>
+		</valueSetReference>
+	  </binding>
+    </element>
+  </differential>
+</StructureDefinition>

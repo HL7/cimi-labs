@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="OxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/OxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs"/>
+    <name value="HSPC Oxygensaturationpostexercise M Fr Pt Bld A Qn Pulseoximetry Lab"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="OxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs is a Clinical Element Model for LOINC Code: 59412-7 LOINC Name: Oxygensaturation^postexercise:MFr:Pt:BldA:Qn:Pulseoximetry"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs">
+            <path value="Observation"/>
+            <definition value="OxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs is a Clinical Element Model for LOINC Code: 59412-7 LOINC Name: Oxygensaturation^postexercise:MFr:Pt:BldA:Qn:Pulseoximetry"/>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="59412-7"/>
+                    <display value="Oxygen saturation in Arterial blood by Pulse oximetry --post exercise"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.valueQuantity.system">
+            <path value="Observation.valueQuantity.system"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.valueQuantity.code">
+            <path value="Observation.valueQuantity.code"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="%"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcOxygensaturationpostexerciseMFrPtBldAQnPulseoximetryLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

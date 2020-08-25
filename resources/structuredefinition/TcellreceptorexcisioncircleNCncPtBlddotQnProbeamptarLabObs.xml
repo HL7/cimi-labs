@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="TcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/TcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs"/>
+    <name value="HSPC Tcellreceptorexcisioncircle N Cnc Pt Blddot Qn Probeamptar Lab Obs"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="TcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs is a Clinical Element Model for LOINC Code: 62320-7 LOINC Name: T-cellreceptorexcisioncircle:NCnc:Pt:Bld.dot:Qn:Probe.amp.tar"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs">
+            <path value="Observation"/>
+            <definition value="TcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs is a Clinical Element Model for LOINC Code: 62320-7 LOINC Name: T-cellreceptorexcisioncircle:NCnc:Pt:Bld.dot:Qn:Probe.amp.tar"/>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="62320-7"/>
+                    <display value="T-cell receptor excision circle [#/volume] in Dried blood spot by Probe and target amplification method"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcTcellreceptorexcisioncircleNCncPtBlddotQnProbeamptarLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

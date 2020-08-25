@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="glucosespecimenType"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/glucosespecimenType"/>
+    <version value="0.01"/>
+    <name value="HSPC Glucose Specimen Type value set"/>
+    <status value="draft"/>
+    <date value="2018-03-29"/>
+    <publisher value="HSPC"/>
+    <description value="Select SNOMED CT codes. The kind of specimen a glucose was measured on."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>	
+				<code value ="122592007"/>
+				<display value ="Acellular blood (serum or plasma) specimen"/>
+			</concept>	
+			<concept>	
+				<code value ="122575003"/>
+				<display value ="Urine specimen"/>
+			</concept>		
+			<concept>	
+				<code value ="119297000"/>
+				<display value ="Blood specimen"/>
+			</concept>	
+			<concept>	
+				<code value ="309051001"/>
+				<display value ="Body fluid specimen"/>
+			</concept>	
+			<concept>	
+				<code value ="258450006"/>
+				<display value ="Cerebrospinal fluid specimen"/>
+			</concept>	
+			<concept>	
+				<code value ="119360007"/>
+				<display value ="Dialysis fluid specimen"/>
+			</concept>
+		</include>
+    </compose>
+</ValueSet>

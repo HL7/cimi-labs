@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="PosNeg"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/PosNeg"/>
+    <version value="0.01"/>
+    <name value="Family Planning Annual Reports HIV Antibody Positive/Negative Value Set"/>
+    <status value="draft"/>
+    <date value="2016-03-23"/>
+    <publisher value="Health Services Platform Consortium (HSPC)"/>
+    <description value="Select SNOMED CT code system positive/negative values."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>	
+			<concept>
+			<code value="10828004"/>
+				<display value="Positive"/>
+			</concept>	
+			<concept>	
+				<code value="260385009"/>
+				<display value="Negative"/>
+			</concept>
+		</include>
+    </compose>
+</ValueSet>

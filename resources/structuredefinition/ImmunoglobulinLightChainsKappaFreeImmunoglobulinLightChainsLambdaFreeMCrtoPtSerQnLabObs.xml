@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="ImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/ImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs"/>
+    <name value="HSPC Immunoglobulin Light Chains Kappa Free Immunoglobulin Light Chains Lambda"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="ImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs is the Clinical Element Model for standard laboratory test results/observations
+    numeric results. LOINC Code: 48378-4."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs">
+            <path value="Observation"/>
+            <definition value="ImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs is the Clinical Element Model for standard laboratory test results/observations
+            numeric results. LOINC Code: 48378-4."/>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="48378-4"/>
+                    <display value="Immunoglobulin light chains.kappa.free/Immunoglobulin light chains.lambda.free [Mass ratio] in Serum"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcImmunoglobulinLightChainsKappaFreeImmunoglobulinLightChainsLambdaFreeMCrtoPtSerQnLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

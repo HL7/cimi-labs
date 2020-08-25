@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="CoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/CoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs"/>
+    <name value="HSPC Coagulation Tissue Factor Induced INR Rel Time Pt PPP"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="CoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs is the Clinical Element Model for standard laboratory test results/observations numeric results. LOINC Code:
+    6301-6."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs">
+            <path value="Observation"/>
+            <definition value="CoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs is the Clinical Element Model for standard laboratory test results/observations numeric results. LOINC
+            Code: 6301-6."/>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="6301-6"/>
+                    <display value="INR in Platelet poor plasma by Coagulation assay"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcCoagulationTissueFactorInducedINRRelTimePtPPPQnCoagLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

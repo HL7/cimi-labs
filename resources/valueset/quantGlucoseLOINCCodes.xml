@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="quantGlucoseLOINCCodes"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/quantGlucoseLOINCCodes"/>
+    <version value="0.01"/>
+    <name value="HSPC Quantitative Glucose LOINC codes"/>
+    <status value="draft"/>
+    <date value="2018-08-28"/>
+    <publisher value="HSPC"/>
+    <description value="Select LOINC codes. The LOINC codes that represent quantitative glucose tests."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://loinc.org"/>
+		<concept>	
+			<code value="1501-6"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --1 hour post 100 g glucose PO"/>
+		</concept>	
+		<concept>	
+			<code value="1504-0"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --1 hour post 50 g glucose PO"/>
+		</concept>	
+		<concept>	
+			<code value="1507-3"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --1 hour post 75 g glucose PO"/>
+		</concept>	
+		<concept>	
+			<code value="20438-8"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose"/>
+		</concept>	
+		<concept>	
+			<code value="10449-7"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --1 hour post meal"/>
+		</concept>	
+		<concept>	
+			<code value="1514-9"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --2 hours post 100 g glucose PO"/>
+		</concept>	
+		<concept>	
+			<code value="1518-0"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --2 hours post 75 g glucose PO"/>
+		</concept>	
+		<concept>	
+			<code value="20436-2"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --2 hours post dose glucose"/>
+		</concept>	
+		<concept>	
+			<code value="1521-4"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --2 hours post meal"/>
+		</concept>	
+		<concept>	
+			<code value="1530-5"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --3 hours post 100 g glucose PO"/>
+		</concept>	
+		<concept>	
+			<code value="20437-0"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --3 hours post dose glucose"/>
+		</concept>	
+		<concept>	
+			<code value="1527-1"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --30 minutes post 75 g glucose PO"/>
+		</concept>	
+		<concept>	
+			<code value="2340-8"/>
+			<display value="Glucose [Mass/volume] in Blood by Automated test strip|Glucose [Mass/volume] in Blood by Test strip auto"/>
+		</concept>	
+		<concept>	
+			<code value="53328-1"/>
+			<display value="Glucose [Mass/volume] in Urine by Automated test strip"/>
+		</concept>	
+		<concept>	
+			<code value="2339-0"/>
+			<display value="Glucose [Mass/volume] in Blood"/>
+		</concept>	
+		<concept>	
+			<code value="1558-6"/>
+			<display value="Fasting glucose [Mass/volume] in Serum or Plasma"/>
+		</concept>	
+		<concept>	
+			<code value="2345-7"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma"/>
+		</concept>	
+		<concept>	
+			<code value="2344-0"/>
+			<display value="Glucose [Mass/volume] in Body fluid"/>
+		</concept>	
+		<concept>	
+			<code value="2342-4"/>
+			<display value="Glucose [Mass/volume] in Cerebral spinal fluid"/>
+		</concept>	
+		<concept>	
+			<code value="2350-7"/>
+			<display value="Glucose [Mass/volume] in Urine"/>
+		</concept>	
+		<concept>	
+			<code value="1549-5"/>
+			<display value="Glucose [Mass/volume] in Serum or Plasma --pre 100 g glucose PO"/>
+		</concept>	
+		<concept>	
+			<code value="2341-6"/>
+			<display value="Glucose [Mass/volume] in Blood by Test strip manual"/>
+		</concept>	
+		<concept>	
+			<code value="5792-7"/>
+			<display value="Glucose [Mass/volume] in Urine by Test strip"/>
+		</concept>	
+		</include>
+    </compose>
+</ValueSet>

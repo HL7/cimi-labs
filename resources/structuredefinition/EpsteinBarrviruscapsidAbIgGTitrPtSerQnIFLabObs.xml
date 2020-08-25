@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="EpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/EpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs"/>
+    <name value="HSPC Epstein Barrviruscapsid Ab Ig G Titr Pt Ser Qn"/>
+    <status value="draft"/>
+    <date value="2010-07-03"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="EpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs is a Clinical Element Model for LOINC Code: 5158-1 LOINC Name: EpsteinBarrviruscapsidAb.IgG:Titr:Pt:Ser:Qn:IF"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs">
+            <path value="Observation"/>
+            <definition value="EpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs is a Clinical Element Model for LOINC Code: 5158-1 LOINC Name: EpsteinBarrviruscapsidAb.IgG:Titr:Pt:Ser:Qn:IF"/>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.key">
+            <path value="Observation.code"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="5158-1"/>
+                    <display value="Epstein Barr virus capsid IgG Ab [Titer] in Serum by Immunofluorescence"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="instant"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.modifierExtension:focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs.referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:performer">
+            <path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.performer"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:responsibleObserver">
+            <path value="Observation.performer"/>
+            <sliceName value="responsibleobserver"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:responsibleObserver"/>
+            <comment value="Key code for this model: ResponsibleObserver_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:performingLaboratory">
+            <path value="Observation.performer"/>
+            <sliceName value="performinglaboratory"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:performingLaboratory"/>
+            <comment value="Key code for this model: PerformingLaboratory_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:performingOrganizationMedicalDirector">
+            <path value="Observation.performer"/>
+            <sliceName value="performingorganizationmedicaldirector"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:performingOrganizationMedicalDirector"/>
+            <comment value="Key code for this model: PerformingOrganizationMedicalDirector_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:reportingPriority">
+            <path value="Observation.extension"/>
+            <sliceName value="reportingpriority"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
+            </type>
+        </element>
+        <element id="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:deltaFlag">
+            <path value="Observation.extension"/>
+            <sliceName value="deltaflag"/>
+            <short value="Observation:hspcEpsteinBarrviruscapsidAbIgGTitrPtSerQnIFLabObs:deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

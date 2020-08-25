@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="glucoseChallengeVS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/glucoseChallengeVS"/>
+    <version value="0.01"/>
+    <name value="HSPC Glucose Challenge value set"/>
+    <status value="draft"/>
+    <date value="2018-08-28"/>
+    <publisher value="HSPC"/>
+    <description value="Select SNOMED CT codes. The coded values that describe"/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>	
+				<code value ="703760002"/>
+				<display value ="1H post 50 g glucose PO"/>
+			</concept>	
+			<concept>	
+				<code value ="703762005"/>
+				<display value ="1H post 100 g glucose PO"/>
+			</concept>	
+			<concept>	
+				<code value ="703766008"/>
+				<display value ="1H post 75 g glucose PO"/>
+			</concept>	
+			<concept>	
+				<code value ="703775005"/>
+				<display value ="30M post 75 g glucose PO"/>
+			</concept>	
+			<concept>	
+				<code value ="703774009"/>
+				<display value ="3H post 100 g glucose PO"/>
+			</concept>	
+			<concept>	
+				<code value ="703772008"/>
+				<display value ="2H post 100 g glucose PO"/>
+			</concept>	
+			<concept>	
+				<code value ="703761003"/>
+				<display value ="2H post 75 g glucose PO"/>
+			</concept>	
+			<concept>	
+				<code value ="703769001"/>
+				<display value ="1H post dose glucose"/>
+			</concept>	
+			<concept>	
+				<code value ="703773003"/>
+				<display value ="3H post dose glucose"/>
+			</concept>	
+			<concept>	
+				<code value ="703770000"/>
+				<display value ="2H post dose glucose"/>
+			</concept>	
+			<concept>	
+				<code value ="703768009"/>
+				<display value ="2H post meal"/>
+			</concept>	
+			<concept>	
+				<code value ="703767004"/>
+				<display value ="1H post meal"/>
+			</concept>	
+			<concept>	
+				<code value ="726054005"/>
+				<display value ="Post fasting"/>
+			</concept>	
+			<concept>	
+				<code value ="703771001"/>
+				<display value ="pre 100 g glucose PO"/>
+			</concept>
+		</include>
+    </compose>
+</ValueSet>
