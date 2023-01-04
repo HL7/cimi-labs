@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "LabResutlCode_VSET",
+  "id": "lab-result-code-value-set",
+  "title": "Lab Result Code value set",
+  "description": "A set of LOINC codes that describe laboratory tests.",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/lab-result-code-value-set",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  }
+}

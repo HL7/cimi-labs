@@ -1,0 +1,10 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RefRangeNom_VSET",
+  "id": "reference-range-nom-value-set",
+  "title": "Reference Range Nominal value set",
+  "description": "A set of Snomed CT terms that describe reference ranges.",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/reference-range-nom-value-set"
+}

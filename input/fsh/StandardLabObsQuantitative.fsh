@@ -3,8 +3,7 @@ Parent: StandardLabObs
 Id: standard-lab-obs-quant
 Title: "Standard Lab Obs Quantitative" 
 Description: "An abstract laboratory observation profile for quantitative types of lab tests."
-^abstract = false
-* code from LNCQnCodesVS (extensible)
+* code from StndLabObsQnCode_VSET (extensible)
 * value[x] only Quantity
-* valueQuantity.code from UnitsOfMeasureVS (extensible)
-* interpretation from AbnmlIntNumericNomVS (extensible)
+* valueQuantity.code from UnitsOfMeasure_VSET (extensible)
+* interpretation from AbnmIntNumbericNom_VSET (extensible)

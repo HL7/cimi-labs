@@ -3,8 +3,9 @@ Parent: StandardLabObs
 Id: standard-lab-obs-narrative 
 Title: "Standard Lab Obs Narrative"
 Description: "The base profile for all LOINC lab tests that have textual results in a string format."
-* code from StndLabObsNarCodeVS (extensible)
+* code from StandardLabObsNarrative_VSET (extensible)
 * value[x] only string
-* dataAbsentReason from NullFlavorVS (extensible)
-* interpretation from AbnmlIntpCodeVS (extensible)
-* referenceRange.extension contains RefRangeNominal 0..1
+* dataAbsentReason from NullFlavor_VSET (extensible)
+* interpretation from AbnormalInterpretation_VSET (extensible)
+* referenceRange.extension contains 
+    RefRangeNominal named RefRangeNominal 0..1 MS

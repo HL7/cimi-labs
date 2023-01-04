@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TiterLabCodes_VSET",
+  "id": "titer-lab-codes-value-set",
+  "title": "Titer Lab Codes value set",
+  "description": "A set of LOINC codes used to identify titer laboratory tests.",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/titer-lab-codes-value-set",
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "Property",
+            "op": "=",
+            "value": "Ratio"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AbnmIntNumbericNom_VSET",
+  "id": "abnml-int-numeric-nom-value-set",
+  "title": "Abnormal Interpretation Numeric Nominal value set",
+  "description": "A set of Snomed CT terms that describe the abnormality of numeric laboratory tests, when applicable.",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/abnml-int-numeric-nom-value-set",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "263654008",
+            "display": "Abnormal"
+          },
+          {
+            "code": "371879000",
+            "display": "Abnormally high"
+          },
+          {
+            "code": "371880002",
+            "display": "Abnormally low"
+          },
+          {
+            "code": "24651000205108",
+            "display": "Very abnormal"
+          },
+          {
+            "code": "260360000",
+            "display": "Very high"
+          },
+          {
+            "code": "260362008",
+            "display": "Very low"
+          },
+          {
+            "code": "17621005",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  }
+}

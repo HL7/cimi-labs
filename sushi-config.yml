@@ -1,0 +1,52 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: CIMI-Labs
+canonical: http://hl7.org/fhir/us/cimi-labs
+version: 1.0.0
+name: CIMI Laboratory Results
+title: Base Laboratory Class FHIR Profiles
+status: draft
+publisher:
+  -
+    name: HL7 International - Clinical Information Modeling Initiative
+    url: http://hl7.org/Special/committees/cimi
+  -
+    name: Graphite Health
+    url: https://www.graphitehealth.io
+description: This implementation guide defines and describes the FHIR profiles for general types of laboratory test results, quantitative, ordinal, coded, narrative, titer (ratio), and documented results.
+fhirVersion: 4.0.1
+dependencies: 
+  hl7.fhir.us.core: 3.1.1
+copyrightYear: 2021+
+copyright: Graphite Health, all rights reserved Creative Commons License
+releaseLabel: Draft
+jurisdiction: urn:iso:std:iso:3166#US "United States of America"
+packageId: hl7.fhir.us.cimilabs
+parameters:
+  show-inherited-invariants: false
+  path-expansion-params: ../../exp-params.json
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+pages:
+  index.md:
+    title: Home
+  profiles.md:
+    title: Profiles
+  terminology.md:
+    title: Terminology
+  all-examples.md:
+    title: Examples
+  downloads.md:
+    title: Downloads
+menu:
+  IG Home: index.html
+  Profiles & Extensions: profiles.html
+  Examples: all-examples.html
+  Terminology: terminology.html
+  Downloads: downloads.html
+  Artifacts: artifacts.html

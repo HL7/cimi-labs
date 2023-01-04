@@ -1,0 +1,385 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "CIMI-Labs",
+  "url": "http://hl7.org/fhir/us/cimi-labs/ImplementationGuide/CIMI-Labs",
+  "version": "1.0.0",
+  "name": "CIMILaboratoryResults",
+  "title": "Base Laboratory Class FHIR Profiles",
+  "status": "draft",
+  "publisher": "HL7 International - Clinical Information Modeling Initiative",
+  "contact": [
+    {
+      "name": "HL7 International - Clinical Information Modeling Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/cimi"
+        }
+      ]
+    },
+    {
+      "name": "Graphite Health",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.graphitehealth.io"
+        }
+      ]
+    }
+  ],
+  "description": "This implementation guide defines and describes the FHIR profiles for general types of laboratory test results, quantitative, ordinal, coded, narrative, titer (ratio), and documented results.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "copyright": "Graphite Health, all rights reserved Creative Commons License",
+  "packageId": "hl7.fhir.us.cimilabs",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.1",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/standard-lab-obs"
+        },
+        "name": "Standard Laboratory Observation Base profile",
+        "description": "An abstract base profile on which other sub-types will be built.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/standard-lab-obs-coded"
+        },
+        "name": "Standard Lab Obs Coded",
+        "description": "The base profile for all lab tests with coded results (excluding ordinal).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/standard-lab-obs-document"
+        },
+        "name": "Standard Lab Obs Document",
+        "description": "A base profile for all LOINC lab tests that have an attached document or structured text as the result.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/standard-lab-obs-narrative"
+        },
+        "name": "Standard Lab Obs Narrative",
+        "description": "The base profile for all LOINC lab tests that have textual results in a string format.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/standard-lab-obs-ordinal"
+        },
+        "name": "Standard Lab Obs Ordinal",
+        "description": "The base profile for all LOINC lab tests that have ordinal results.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/standard-lab-obs-quant"
+        },
+        "name": "Standard Lab Obs Quantitative",
+        "description": "An abstract laboratory observation profile for quantitative types of lab tests.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/standard-lab-obs-titer"
+        },
+        "name": "Standard Lab Obs Titer",
+        "description": "The base profile for all LOINC lab tests that have titer results.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-organization"
+        },
+        "name": "US Core Organization Profile",
+        "description": "Defines basic constraints and extensions on the Organization resource for use with other US Core resources",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-patient"
+        },
+        "name": "US Core Patient Profile",
+        "description": "Defines constraints and extensions on the patient resource for the minimal set of data to query and retrieve patient demographic information.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-practitioner"
+        },
+        "name": "US Core Practitioner Profile",
+        "description": "The practitioner(s) referenced in US Core profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ref-range-nominal"
+        },
+        "name": "Reference Range Nominal",
+        "description": "This is an extension for the Reference Range element in Observation and is used to capture coded types of reference ranges.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/abnml-int-numeric-nom-value-set"
+        },
+        "name": "Abnormal Interpretation Numeric Nominal value set",
+        "description": "A set of Snomed CT terms that describe the abnormality of numeric laboratory tests, when applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/abnormal-interpretation-value-set"
+        },
+        "name": "Abnmormal Interpretation value set",
+        "description": "A set of Snomed CT codes that describe the abnormality of a lab test result.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/loinc-doc-value-set"
+        },
+        "name": "LOINC Document class value set",
+        "description": "A set of LOINC codes that are used for lab tests that are reported using attachments (documents, reports, etc.)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/lab-result-code-value-set"
+        },
+        "name": "Lab Result Code value set",
+        "description": "A set of LOINC codes that describe laboratory tests.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/null-flavor-value-set"
+        },
+        "name": "Null Flavor value set",
+        "description": "A set of Snomed CT codes that describe when a test result would not have a value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ordinal-value-code-value-set"
+        },
+        "name": "Ordinal Value Code value set",
+        "description": "A set of Snomed CT codes that are used to describe lab test results that are of an ordinal nature.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/reference-range-nom-value-set"
+        },
+        "name": "Reference Range Nominal value set",
+        "description": "A set of Snomed CT terms that describe reference ranges.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/standard-lab-obs-narrative-value-set"
+        },
+        "name": "Standard Lab Obs Narrative value set",
+        "description": "A set of LOINC codes that are used for lab tests with tex-based results.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/StdLabObsCoded-value-set"
+        },
+        "name": "Standard Coded Lab Observation Code value set",
+        "description": "A set of LOINC codes that describe lab tests that are nominal.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/StdLabObsOrdinal-value-set"
+        },
+        "name": "Standard Coded Lab Observation Code value set",
+        "description": "A set of LOINC codes that describe lab tests that are nominal.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/standard-lab-obs-quantitative-value-set"
+        },
+        "name": "Standard Lab Obs Quantitative Code value set",
+        "description": "A set of LOINC codes that are used to identify quantitative types of lab tests.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/titer-lab-codes-value-set"
+        },
+        "name": "Titer Lab Codes value set",
+        "description": "A set of LOINC codes used to identify titer laboratory tests.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/units-of-measure-value-set"
+        },
+        "name": "Units of Measure value set",
+        "description": "A set of codes from the UCUM codes system.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/CodedLab-example"
+        },
+        "name": "CodedLab-example",
+        "description": "An example of a coded lab test.",
+        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-coded"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/DocumentLab-example"
+        },
+        "name": "DocumentLab-example",
+        "description": "An example of a lab test where the rsults are reported using a document.",
+        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-document"
+      },
+      {
+        "reference": {
+          "reference": "Observation/NarrativeLab-example"
+        },
+        "name": "NarrativeLab-example",
+        "description": "An example of a narrative lab test.",
+        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-narrative"
+      },
+      {
+        "reference": {
+          "reference": "Observation/OrdinalLab-example"
+        },
+        "name": "OrdinalLab-example",
+        "description": "An example of an ordinal lab test.",
+        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-ordinal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/QuantitativeLab-example"
+        },
+        "name": "QuantitativeLab-example",
+        "description": "An example of a quantitative lab test.",
+        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-quant"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TiterLab-example"
+        },
+        "name": "TiterLab-example",
+        "description": "An example of a titer lab test.",
+        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-titer"
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-example"
+        },
+        "name": "organization-example",
+        "description": "Organization example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-example"
+        },
+        "name": "patient-example",
+        "description": "Patient example",
+        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/us-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-example"
+        },
+        "name": "practitioner-example",
+        "description": "Practitioner example",
+        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/us-core-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-example2"
+        },
+        "name": "practitioner-example2",
+        "description": "Practitioner example 2",
+        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/us-core-practitioner"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "all-examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "Draft"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../exp-params.json"
+      },
+      {
+        "code": "path-history",
+        "value": "http://hl7.org/fhir/us/cimi-labs/history.html"
+      }
+    ]
+  }
+}

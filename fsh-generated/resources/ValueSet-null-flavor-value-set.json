@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NullFlavor_VSET",
+  "id": "null-flavor-value-set",
+  "title": "Null Flavor value set",
+  "description": "A set of Snomed CT codes that describe when a test result would not have a value.",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/null-flavor-value-set",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "89925002",
+            "display": "Canceled"
+          },
+          {
+            "code": "62604006",
+            "display": "Contaminated"
+          },
+          {
+            "code": "183665006",
+            "display": "Discharged from hospital"
+          },
+          {
+            "code": "723510000",
+            "display": "Entered in error"
+          },
+          {
+            "code": "397933008",
+            "display": "Equipment error/failure"
+          },
+          {
+            "code": "397839006",
+            "display": "Equipment malfunction"
+          },
+          {
+            "code": "125154007",
+            "display": "specimen unsatisfactory for evaluation"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "id",
+            "op": "is-a",
+            "value": "125154007"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ref-range-nominal",
+  "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/ref-range-nominal",
+  "version": "1.0.0",
+  "name": "RefRangeNominal",
+  "title": "Reference Range Nominal",
+  "status": "active",
+  "description": "This is an extension for the Reference Range element in Observation and is used to capture coded types of reference ranges.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Reference Range Nominal",
+        "definition": "This is an extension for the Reference Range element in Observation and is used to capture coded types of reference ranges."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/ref-range-nominal"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/us/cimi-labs/ValueSet/reference-range-nom-value-set"
+        }
+      }
+    ]
+  }
+}

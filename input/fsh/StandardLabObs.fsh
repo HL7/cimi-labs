@@ -3,7 +3,7 @@ Parent: Observation
 Id: standard-lab-obs
 Title: "Standard Laboratory Observation Base profile"
 Description: "An abstract base profile on which other sub-types will be built."
-^abstract = true
+* ^abstract = true
 //slicing rules for identifier
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
@@ -30,4 +30,4 @@ Description: "An abstract base profile on which other sub-types will be built."
 * performer[responsibleObserver] only Reference(Practitioner)
 * performer[performingLaboratory] only Reference(Organization)
 * performer[performingOrganizationMedicalDirector] only Reference(Practitioner)
-* dataAbsentReason from NullFlavorVS (extensible)
+* dataAbsentReason from NullFlavor_VSET (extensible)

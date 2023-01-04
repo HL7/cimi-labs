@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "OrdinalValueCode_VSET",
+  "id": "ordinal-value-code-value-set",
+  "title": "Ordinal Value Code value set",
+  "description": "A set of Snomed CT codes that are used to describe lab test results that are of an ordinal nature.",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/ordinal-value-code-value-set",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "260347006",
+            "display": "+"
+          },
+          {
+            "code": "260348001",
+            "display": "++"
+          },
+          {
+            "code": "260349009",
+            "display": "+++"
+          },
+          {
+            "code": "260350009",
+            "display": "++++"
+          },
+          {
+            "code": "260385009",
+            "display": "Negative"
+          },
+          {
+            "code": "260405006",
+            "display": "Trace (qualifier value)"
+          },
+          {
+            "code": "255507004",
+            "display": "Small (qualifier value)"
+          },
+          {
+            "code": "255508009",
+            "display": "Medium (qualifier value)"
+          },
+          {
+            "code": "255509001",
+            "display": "Large (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}
