@@ -30,7 +30,13 @@ ValueSet: LabResutlCode_VSET
 Id: lab-result-code-value-set
 Title: "Lab Result Code value set"
 Description: "A set of LOINC codes that describe laboratory tests."
-* include codes from system SCT
+* include codes from system SCT where id is-a 46800005
+* include codes from system SCT where id is-a 167239007
+* include codes from system SCT where id is-a 115940004
+* SCT#52101004 "Present (qualifier value)"
+* SCT#10828004 "Positive (qualifier value)"
+* SCT#2667000 "Absent (qualifier value)"
+* SCT#260385009 "Negative (qualifier value)"
 
 ValueSet: AbnormalInterpretation_VSET
 Id: abnormal-interpretation-value-set

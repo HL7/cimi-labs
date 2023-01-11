@@ -21,3 +21,22 @@ The imagingStudy, result, and media elements have been constrained to a cardinal
 The following example is provided to illustrate conformant resource content for this profile.
 
 -[Standard Document Lab Observation](DiagnosticReport-DocuemntLab-example.html)
+
+#### Value Sets
+
+<div>
+	<table class="grid">
+		<thead>
+			<tr>
+			  <th width="20%">Value Set</th>
+			  <th width="40%">Purpose</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			  <td><a href="ValueSet-abnormal-interpretation-value-set.html">Abnormal Interpretation value set</a></td>
+			  <td>This value set contains coded terms that are used to identify the level of abnormality of a lab test.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

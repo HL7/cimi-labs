@@ -5,7 +5,7 @@
   "id": "units-of-measure-value-set",
   "title": "Units of Measure value set",
   "description": "A set of codes from the UCUM codes system.",
-  "version": "1.0.0",
+  "version": "4.0.1",
   "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/units-of-measure-value-set",
   "compose": {
     "include": [

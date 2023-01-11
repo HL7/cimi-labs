@@ -1,8 +1,8 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "CIMI-Labs",
-  "url": "http://hl7.org/fhir/us/cimi-labs/ImplementationGuide/CIMI-Labs",
-  "version": "1.0.0",
+  "id": "cimi-labs",
+  "url": "http://hl7.org/fhir/us/cimi-labs/ImplementationGuide/cimi-labs",
+  "version": "4.0.1",
   "name": "CIMILaboratoryResults",
   "title": "Base Laboratory Class FHIR Profiles",
   "status": "draft",

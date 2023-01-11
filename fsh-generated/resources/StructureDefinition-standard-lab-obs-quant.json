@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-quant",
-  "version": "1.0.0",
+  "version": "4.0.1",
   "name": "StandardLabObsQuantitative",
   "title": "Standard Lab Obs Quantitative",
   "status": "active",

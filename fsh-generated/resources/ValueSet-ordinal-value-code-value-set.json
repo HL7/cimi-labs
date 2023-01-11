@@ -5,7 +5,7 @@
   "id": "ordinal-value-code-value-set",
   "title": "Ordinal Value Code value set",
   "description": "A set of Snomed CT codes that are used to describe lab test results that are of an ordinal nature.",
-  "version": "1.0.0",
+  "version": "4.0.1",
   "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/ordinal-value-code-value-set",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "compose": {

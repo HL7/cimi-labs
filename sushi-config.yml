@@ -2,11 +2,12 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: CIMI-Labs
+id: cimi-labs
 canonical: http://hl7.org/fhir/us/cimi-labs
-version: 1.0.0
+canonicalBase: http://hl7.org/fhir/us/cimi-labs
+version: 4.0.1
 name: CIMI Laboratory Results
-title: Base Laboratory Class FHIR Profiles
+title: CIMI Base Laboratory Class FHIR Profiles
 status: draft
 publisher:
   -

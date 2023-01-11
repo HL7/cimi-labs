@@ -17,3 +17,30 @@ This element is constrained to the quantity data type.  Due to the possibility o
 The following example is provided to illustrate conformant resource content to this profile
 
 -[Standard Lab Coded Observation](Observation-QuantitativeLab-example.html)
+
+#### Value Sets
+
+<div>
+	<table class="grid">
+		<thead>
+			<tr>
+			  <th width="20%">Value Set</th>
+			  <th width="40%">Purpose</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			  <td><a href="ValueSet-standard-lab-obs-quantitative-value-set.html">Standard Lab Obs Quantitative value set</a></td>
+			  <td>This is a subset of lab LOINC where the scale is Qn.</td>
+			</tr>
+			<tr>
+			  <td><a href="ValueSet-units-of-measure-value-set.html">Units of Measure value set</a></td>
+			  <td>This si currently the entire UCUm code system. It will be pared down at a later date to represent only those terms needed for lab tests.</td>
+			</tr>
+			<tr>
+			  <td><a href="ValueSet-abnormal-interpretation-value-set.html">Abnormal Interpretation value set</a></td>
+			  <td>This value set contains coded terms that are used to identify the level of abnormality of a lab test.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

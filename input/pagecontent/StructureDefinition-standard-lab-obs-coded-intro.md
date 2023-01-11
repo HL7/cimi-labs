@@ -14,4 +14,31 @@ This element is constrained to the CodeableConcept data type.
 
 The following example is provided to illustrate conformant resource content to this profile
 
--[Standard Lab Coded Observation](Observation-CodedLab-example.html)
+[Standard Lab Obs Coded example](Observation-CodedLab-example.html)
+
+#### Value Sets
+
+<div>
+	<table class="grid">
+		<thead>
+			<tr>
+			  <th width="20%">Value Set</th>
+			  <th width="40%">Purpose</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			  <td><a href="ValueSet-StdLabobsCoded-value-set.html">Standard Lab Obs Coded value set</a></td>
+			  <td>This is a subset of lab LOINC where the scale is Nom.</td>
+			</tr>
+			<tr>
+			  <td><a href="ValueSet-lab-result-code-value-set.html">Coded Lab Result value set</a></td>
+			  <td>This value set contains terms that are used as values for lab tests that have coded results.  It is not complete.  There are thousand of lab tests with coded results.  It will take time to identify all of the possible values for this set. It will possibly have overlap with some of the values in the Coded Ordinal Result value set.</td>
+			</tr>
+			<tr>
+			  <td><a href="ValueSet-abnormal-interpretation-value-set.html">Abnormal Interpretation value set</a></td>
+			  <td>This value set contains coded terms that are used to identify the level of abnormality of a lab test.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -5,7 +5,7 @@
   "id": "abnml-int-numeric-nom-value-set",
   "title": "Abnormal Interpretation Numeric Nominal value set",
   "description": "A set of Snomed CT terms that describe the abnormality of numeric laboratory tests, when applicable.",
-  "version": "1.0.0",
+  "version": "4.0.1",
   "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/abnml-int-numeric-nom-value-set",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "compose": {
