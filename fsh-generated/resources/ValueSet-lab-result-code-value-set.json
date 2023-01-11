@@ -10,7 +10,55 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "id",
+            "op": "is-a",
+            "value": "46800005"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "id",
+            "op": "is-a",
+            "value": "167239007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "id",
+            "op": "is-a",
+            "value": "115940004"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "52101004",
+            "display": "Present (qualifier value)"
+          },
+          {
+            "code": "10828004",
+            "display": "Positive (qualifier value)"
+          },
+          {
+            "code": "2667000",
+            "display": "Absent (qualifier value)"
+          },
+          {
+            "code": "260385009",
+            "display": "Negative (qualifier value)"
+          }
+        ]
       }
     ]
   }

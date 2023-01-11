@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/us/cimi-labs/ImplementationGuide/cimi-labs",
   "version": "4.0.1",
   "name": "CIMILaboratoryResults",
-  "title": "Base Laboratory Class FHIR Profiles",
+  "title": "CIMI Base Laboratory Class FHIR Profiles",
   "status": "draft",
   "publisher": "HL7 International - Clinical Information Modeling Initiative",
   "contact": [
