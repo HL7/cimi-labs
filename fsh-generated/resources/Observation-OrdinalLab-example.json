@@ -63,7 +63,7 @@
     "text": "Bacteria [Presence] in Urine"
   },
   "subject": {
-    "reference": "Patient/patient-example"
+    "display": "Young, Female 2345"
   },
   "encounter": {
     "display": "GP Visit"
@@ -79,13 +79,13 @@
   },
   "performer": [
     {
-      "reference": "Practitioner/practitioner-example2"
+      "display": "LabTech 007"
     },
     {
-      "reference": "Organization/organization-example"
+      "display": "Acme Psuedo Lab"
     },
     {
-      "reference": "Practitioner/practitioner-example"
+      "display": "Dr. Dre"
     }
   ]
 }

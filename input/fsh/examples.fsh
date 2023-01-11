@@ -1,4 +1,4 @@
-Instance: patient-example
+/* Instance: patient-example
 InstanceOf: USCorePatient
 Description: "Patient example"
 Usage: #example
@@ -39,9 +39,9 @@ Usage: #example
 * address.city = "Mounds"
 * address.state = "OK"
 * address.postalCode = "74047"
-* address.country = "US"
+* address.country = "US" */
 
-Instance: practitioner-example
+/* Instance: practitioner-example
 InstanceOf: USCorePractitioner
 Description: "Practitioner example"
 Usage: #example
@@ -83,7 +83,7 @@ Usage: #example
 * address.line = "1 Infinity Loop"
 * address.city = "Anytown"
 * address.state = "Allstates"
-* address.country = "USA"
+* address.country = "USA" */
 
 Instance: QuantitativeLab-example
 InstanceOf: StandardLabObsQuantitative
@@ -94,16 +94,16 @@ Usage: #example
 * category.text = "Laboratory"
 * code = LNC#2345-7
 * code.text = "Glucose [Mass/volume] in Serum or Plasma"
-* subject = Reference(patient-example)
+* subject.display = "Young, Female 2345"
 * encounter.display = "GP Visit"
 * effectiveDateTime = "2019-10-16T12:12:29-09:00"
 * valueQuantity = 103 'mg/dL' "mg/dL"
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver] = Reference(practitioner-example2)
-* performer[performingLaboratory] = Reference(organization-example)
-* performer[performingOrganizationMedicalDirector] = Reference(practitioner-example)
+* performer[responsibleObserver].display = "LabTech 007"
+* performer[performingLaboratory].display = "Acme Psuedo Lab"
+* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
 
 Instance: CodedLab-example
 InstanceOf: StandardLabObsCoded
@@ -114,7 +114,7 @@ Usage: #example
 * category.text = "Laboratory"
 * code = LNC#58437-5
 * code.text = "Microorganisms seen [Type] in Urine sediment by Light microscopy"
-* subject = Reference(patient-example)
+* subject.display = "Young, Female 2345"
 * encounter.display = "GP Visit"
 * effectiveDateTime = "2019-10-16T12:12:29-09:00"
 * valueCodeableConcept.coding.code = SCT#3764006
@@ -122,9 +122,9 @@ Usage: #example
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver] = Reference(practitioner-example2)
-* performer[performingLaboratory] = Reference(organization-example)
-* performer[performingOrganizationMedicalDirector] = Reference(practitioner-example)
+* performer[responsibleObserver].display = "LabTech 007"
+* performer[performingLaboratory].display = "Acme Psuedo Lab"
+* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
 
 Instance: OrdinalLab-example
 InstanceOf: StandardLabObsOrdinal
@@ -135,7 +135,7 @@ Usage: #example
 * category.text = "Laboratory"
 * code = LNC#87829-8
 * code.text = "Bacteria [Presence] in Urine"
-* subject = Reference(patient-example)
+* subject.display = "Young, Female 2345"
 * encounter.display = "GP Visit"
 * effectiveDateTime = "2019-10-16T12:12:29-09:00"
 * valueCodeableConcept.coding.code = SCT#260348001
@@ -143,9 +143,9 @@ Usage: #example
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver] = Reference(practitioner-example2)
-* performer[performingLaboratory] = Reference(organization-example)
-* performer[performingOrganizationMedicalDirector] = Reference(practitioner-example)
+* performer[responsibleObserver].display = "LabTech 007"
+* performer[performingLaboratory].display = "Acme Psuedo Lab"
+* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
 
 Instance: NarrativeLab-example
 InstanceOf: StandardLabObsNarrative
@@ -156,16 +156,16 @@ Usage: #example
 * category.text = "Laboratory"
 * code = LNC#53974-2
 * code.text = "Erythrocyte morphology [Interpretation] in Urine sediment by Light microscopy Narrative"
-* subject = Reference(patient-example)
+* subject.display = "Young, Female 2345"
 * encounter.display = "GP Visit"
 * effectiveDateTime = "2019-10-16T12:12:29-09:00"
 * valueString = "Red cells are mostly normochromic/nomrocytic with 10% having siderotic granule inclusions."
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver] = Reference(practitioner-example2)
-* performer[performingLaboratory] = Reference(organization-example)
-* performer[performingOrganizationMedicalDirector] = Reference(practitioner-example)
+* performer[responsibleObserver].display = "LabTech 007"
+* performer[performingLaboratory].display = "Acme Psuedo Lab"
+* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
 
 Instance: TiterLab-example
 InstanceOf: StandardLabObsTiter
@@ -176,7 +176,7 @@ Usage: #example
 * category.text = "Laboratory"
 * code = LNC#87925-4
 * code.text = "Reagin Ab [Titer] in Cerebral spinal fluid by RPR"
-* subject = Reference(patient-example)
+* subject.display = "Young, Female 2345"
 * encounter.display = "GP Visit"
 * effectiveDateTime = "2019-10-16T12:12:29-09:00"
 * valueRatio.numerator.value = 1
@@ -185,9 +185,9 @@ Usage: #example
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver] = Reference(practitioner-example2)
-* performer[performingLaboratory] = Reference(organization-example)
-* performer[performingOrganizationMedicalDirector] = Reference(practitioner-example)
+* performer[responsibleObserver].display = "LabTech 007"
+* performer[performingLaboratory].display = "Acme Psuedo Lab"
+* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
 
 Instance: DocumentLab-example
 InstanceOf: StandardLabObsDocument
@@ -198,14 +198,14 @@ Usage: #example
 * category.text = "Laboratory"
 * code = LNC#33721-2
 * code.text = "Bone marrow Pathology biopsy report"
-* subject = Reference(patient-example)
+* subject.display = "Young, Female 2345"
 * encounter.display = "Hemeoncology Visit"
 * effectiveDateTime = "2019-10-16T12:12:29-09:00"
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver] = Reference(practitioner-example2)
-* performer[performingLaboratory] = Reference(organization-example)
-* performer[performingOrganizationMedicalDirector] = Reference(practitioner-example)
+* performer[responsibleObserver].display = "LabTech 007"
+* performer[performingLaboratory].display = "Acme Psuedo Lab"
+* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
 * presentedForm.contentType = #PDF 
 * presentedForm.url = "http://example.org/PatientBoneMarrowReport"

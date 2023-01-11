@@ -112,30 +112,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/us-core-organization"
-        },
-        "name": "US Core Organization Profile",
-        "description": "Defines basic constraints and extensions on the Organization resource for use with other US Core resources",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/us-core-patient"
-        },
-        "name": "US Core Patient Profile",
-        "description": "Defines constraints and extensions on the patient resource for the minimal set of data to query and retrieve patient demographic information.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/us-core-practitioner"
-        },
-        "name": "US Core Practitioner Profile",
-        "description": "The practitioner(s) referenced in US Core profiles.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ref-range-nominal"
         },
         "name": "Reference Range Nominal",
@@ -293,38 +269,6 @@
         "name": "TiterLab-example",
         "description": "An example of a titer lab test.",
         "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-titer"
-      },
-      {
-        "reference": {
-          "reference": "Organization/organization-example"
-        },
-        "name": "organization-example",
-        "description": "Organization example",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Patient/patient-example"
-        },
-        "name": "patient-example",
-        "description": "Patient example",
-        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/us-core-patient"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/practitioner-example"
-        },
-        "name": "practitioner-example",
-        "description": "Practitioner example",
-        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/us-core-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/practitioner-example2"
-        },
-        "name": "practitioner-example2",
-        "description": "Practitioner example 2",
-        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/us-core-practitioner"
       }
     ],
     "page": {

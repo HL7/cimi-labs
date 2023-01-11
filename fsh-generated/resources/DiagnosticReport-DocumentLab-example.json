@@ -63,7 +63,7 @@
     "text": "Bone marrow Pathology biopsy report"
   },
   "subject": {
-    "reference": "Patient/patient-example"
+    "display": "Young, Female 2345"
   },
   "encounter": {
     "display": "Hemeoncology Visit"
@@ -71,13 +71,13 @@
   "effectiveDateTime": "2019-10-16T12:12:29-09:00",
   "performer": [
     {
-      "reference": "Practitioner/practitioner-example2"
+      "display": "LabTech 007"
     },
     {
-      "reference": "Organization/organization-example"
+      "display": "Acme Psuedo Lab"
     },
     {
-      "reference": "Practitioner/practitioner-example"
+      "display": "Dr. Dre"
     }
   ],
   "presentedForm": [
