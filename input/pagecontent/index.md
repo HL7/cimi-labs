@@ -22,7 +22,7 @@ Microbiology lab tests are not included in this implementation guide.  The eleme
 
 #### Realm
 
-Currently this IG fall within the US Realm.
+Currently this IG falls within the US Realm.
 
 #### Must Support
 

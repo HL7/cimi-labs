@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://hl7.org/fhir/us/cimi-labs" defaultVersion="current" defaultWorkgroup="cimi" gitUrl="https://github.com/HL7/cimi-vital-signs" url="http://hl7.org/fhir/us/cimi-labs">
+<version code="current" url="http://hl7.org/fhir/us/cimi-labs"/>
+<version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/vitals/0.2.0"/>
+<version code="0.1" deprecated="true" url="http://hl7.org/fhir/us/vitals/2020Sep"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact deprecated="true" id="ValueSet/abn-Int-Numeric-Nom-VS" key="ValueSet-abn-Int-Numeric-Nom-VS" name="abnIntNumericNomVS"/>
+<artifact id="ValueSet/abnormal-interpretation-value-set" key="ValueSet-abnormal-interpretation-value-set" name="Abnmormal Interpretation value set"/>
+<artifact id="ValueSet/abnml-int-numeric-nom-value-set" key="ValueSet-abnml-int-numeric-nom-value-set" name="Abnormal Interpretation Numeric Nominal value set"/>
+<artifact deprecated="true" id="CodeSystem/APCTemporaryCodeSystem" key="CodeSystem-APC-Temporary-Code-System" name="Associated Precondition Temporary Code System"/>
+<artifact deprecated="true" id="StructureDefinition/AssociatedSituationExt" key="StructureDefinition-AssociatedSituationExt" name="Associated Situation"/>
+<artifact deprecated="true" id="ValueSet/BodyWeightAssociatedSituationVS" key="ValueSet-AssociatedSituationVS" name="Associated Situation value set"/>
+<artifact deprecated="true" id="StructureDefinition/average-blood-pressure" key="Observation-Average-Blood-Pressure" name="Average Blood Pressure"/>
+<artifact deprecated="true" id="Observation/AverageBloodPressure-example" key="Observation-AverageBloodPressure-example" name="AverageBloodPressure-example"/>
+<artifact deprecated="true" id="StructureDefinition/bp-cuff-size-ext" key="StructureDefinition-bp-cuff-size-ext" name="Blood Pressure Cuff Size"/>
+<artifact deprecated="true" id="ValueSet/bpCuffSizeVS" key="ValueSet-bp-Cuff-Size-VS" name="Blood Pressure Cuff Size value set"/>
+<artifact deprecated="true" id="StructureDefinition/bp-device" key="Observation-BP-Device" name="Blood Pressure Device"/>
+<artifact deprecated="true" id="ValueSet/bpmeasbodylocationprecoord" key="ValueSet-bp-meas-body-location-precoord" name="Blood Pressure Measurement Body Location Precoordinated value set"/>
+<artifact deprecated="true" id="ValueSet/bpMeasDeviceCSVS" key="ValueSet-bp-Meas-Device-CS-VS" name="Blood Pressure Measurement Device and Cuff Size value set"/>
+<artifact deprecated="true" id="ValueSet/bpMeasDeviceVS" key="ValueSet-bp-Meas-Device-VS" name="Blood Pressure Measurement Device value set"/>
+<artifact deprecated="true" id="ValueSet/bpMeasMethodVS" key="ValueSet-bp-Meas-Method-VS" name="Blood Pressure Measurement Method value set"/>
+<artifact deprecated="true" id="StructureDefinition/blood-pressure-panel" key="Observation-Blood-Pressure-Panel" name="Blood Pressure Panel"/>
+<artifact deprecated="true" id="Observation/BloodPressurePanel-example" key="Observation-BloodPressurePanel-example" name="BloodPressurePanel-example"/>
+<artifact deprecated="true" id="Observation/bmi-example" key="Observation-bmi-example" name="bmi-example"/>
+<artifact deprecated="true" id="StructureDefinition/height" key="Observation-Height" name="Body Height"/>
+<artifact deprecated="true" id="StructureDefinition/body-length" key="Observation-Body-Length" name="Body Length"/>
+<artifact deprecated="true" id="Observation/bodyLength-example" key="Observation-bodyLength-example" name="bodyLength-example"/>
+<artifact deprecated="true" id="StructureDefinition/body-mass-index" key="Observation-Body-Mass-Index" name="Body Mass Index"/>
+<artifact deprecated="true" id="ValueSet/bodyPositionVS" key="ValueSet-body-Position-VS" name="Body Position value set"/>
+<artifact deprecated="true" id="StructureDefinition/body-temperature" key="Observation-Body-Temperature" name="Body Temperature"/>
+<artifact deprecated="true" id="ValueSet/BodyTempAssociatedSituationVS" key="ValueSet-BodyTempAssociatedSituationVS" name="Body Temperature Associated Situation value set"/>
+<artifact deprecated="true" id="Observation/bodyTemperature-example" key="Observation-bodyTemperature-example" name="bodyTemperature-example"/>
+<artifact deprecated="true" id="ValueSet/bodyTempMeasBodyLocationPrecoordVS" key="ValueSet-body-Temp-Meas-Body-Location-Precoord-VS" name="Body Temperature Measurement Body Location value set"/>
+<artifact deprecated="true" id="ValueSet/bodyTempMeasurementDeviceVS" key="ValueSet-bodyTempMeasurementDeviceVS" name="Body Temperature Measurement Device value set"/>
+<artifact deprecated="true" id="ValueSet/body-Temp-Meas-Method-Device-VS" key="ValueSet-body-Temp-Meas-Method-Device-VS" name="bodyTempMeasMethodDeviceVS"/>
+<artifact deprecated="true" id="StructureDefinition/body-weight" key="Observation-Body-Weight" name="Body Weight"/>
+<artifact deprecated="true" id="Observation/bodyWeight-example" key="Observation-bodyWeight-example" name="bodyWeight-example"/>
+<artifact deprecated="true" id="ValueSet/bodyWeightMeasurementAssociatedSituationVS" key="ValueSet-body-Weight-Measurement-Associated-Precond-VS" name="Body Weight Measurement Associated Situation value set"/>
+<artifact deprecated="true" id="Device/BPDevice1-example" key="Device-BPDevice1-example" name="BPDevice1-example"/>
+<artifact deprecated="true" id="Device/BPDevice2-example" key="Device-BPDevice2-example" name="BPDevice2-example"/>
+<artifact deprecated="true" id="Device/BPDevice-example" key="Device-BPDevice-example" name="BPDevice-example"/>
+<artifact deprecated="true" id="ValueSet/clothing-Worn-During-Measure-VS" key="ValueSet-clothing-Worn-During-Measure-VS" name="clothingWornDuringMeasureVS"/>
+<artifact id="Observation/CodedLab-example" key="Observation-CodedLab-example" name="CodedLab-example"/>
+<artifact deprecated="true" id="ValueSet/definedLimitsVS" key="ValueSet-defined-Limits-VS" name="Defined Limits value set"/>
+<artifact id="DiagnosticReport/DocumentLab-example" key="DiagnosticReport-DocumentLab-example" name="DocumentLab-example"/>
+<artifact deprecated="true" id="StructureDefinition/ExerciseAssociationExt" key="StructureDefinition-ExerciseAssociationExt" name="Exercise Association"/>
+<artifact deprecated="true" id="ValueSet/exertionPhaseVS" key="ValueSet-exertion-Phase-VS" name="Exertion Phase value set"/>
+<artifact deprecated="true" id="Observation/headCircumference-example" key="Observation-headCircumference-example" name="headCircumference-example"/>
+<artifact deprecated="true" id="StructureDefinition/head-occipital-frontal-circumference" key="Observation-Head-Occipita-lFrontal-Circumference" name="Head Occipital-Frontal Circumference by Tape Measure"/>
+<artifact deprecated="true" id="StructureDefinition/heart-rate" key="Observation-Heart-Rate" name="Heart Rate"/>
+<artifact deprecated="true" id="Observation/heartRate-example" key="Observation-heartRate-example" name="heartRate-example"/>
+<artifact deprecated="true" id="ValueSet/heartRateMeasBodyLocationPrecoordVS" key="ValueSet-heart-Rate-Meas-Body-Location-Precoord-VS" name="Heart Rate Measurement Body Location Precoordinated value set"/>
+<artifact deprecated="true" id="ValueSet/heartRateMeasDeviceVS" key="ValueSet-heart-Rate-Meas-Device-VS" name="Heart Rate Measurement Device value set"/>
+<artifact deprecated="true" id="ValueSet/heartRateMeasMethodVS" key="ValueSet-heart-Rate-Meas-Method-VS" name="Heart Rate Measurement Method value set"/>
+<artifact deprecated="true" id="ValueSet/heightBodyPositionVS" key="ValueSet-height-Body-Position-VS" name="Height Body Position value set"/>
+<artifact deprecated="true" id="Observation/height-example" key="Observation-height-example" name="height-example"/>
+<artifact deprecated="true" id="ValueSet/heightLengthMeasDeviceVS" key="ValueSet-height-Length-Meas-Device-VS" name="Height Length Measurement Device value set"/>
+<artifact deprecated="true" id="ValueSet/heightLengthMeasMethodVS" key="ValueSet-height-Length-Meas-Method-VS" name="Height Length Measurement Method value set"/>
+<artifact deprecated="true" id="CodeSystem/organization-hspc-organizationtype" key="CodeSystem-organization-hspc-organizationtpye" name="HSPC Organization Type Code System"/>
+<artifact id="ValueSet/lab-result-code-value-set" key="ValueSet-lab-result-code-value-set" name="Lab Result Code value set"/>
+<artifact deprecated="true" id="ValueSet/LengthUOMVS" key="ValueSet-LengthUOMVS" name="Length Units of Measure value set"/>
+<artifact id="ValueSet/loinc-doc-value-set" key="ValueSet-loinc-doc-value-set" name="LOINC Document class value set"/>
+<artifact deprecated="true" id="ValueSet/LowOnlyNumericResultIntVS" key="ValueSet-LowOnlyNumericResultIntVS" name="Low Only Numeric Result Interpretation value set"/>
+<artifact deprecated="true" id="StructureDefinition/MeasurementProtocolExt" key="StructureDefinition-MeasurementProtocolExt" name="Measurement Protocol"/>
+<artifact deprecated="true" id="CodeSystem/MeasurementProtocolTemporaryCodeSystem" key="CodeSystem-MeasurementProtocolTemporaryCodeSystem" name="Measurement Protocol Temporary Code System"/>
+<artifact deprecated="true" id="ValueSet/MeasurementProtocolVS" key="ValueSet-Measurement-Protocol-VS" name="Measurement Protocol value set"/>
+<artifact deprecated="true" id="StructureDefinition/MeasurementSettingExt" key="StructureDefinition-MeasurementSettingExt" name="Measurement Setting"/>
+<artifact deprecated="true" id="ValueSet/MeasSettingVS" key="ValueSet-Meas-Setting-VS" name="Measurement Setting value set"/>
+<artifact id="Observation/NarrativeLab-example" key="Observation-NarrativeLab-example" name="NarrativeLab-example"/>
+<artifact id="ValueSet/null-flavor-value-set" key="ValueSet-null-flavor-value-set" name="Null Flavor value set"/>
+<artifact deprecated="true" id="ValueSet/NumericResultIntVS" key="ValueSet-NumericResultIntVS" name="Numeric Result Interpretation value set"/>
+<artifact deprecated="true" id="ValueSet/NumericResultIntNonPanicVS" key="ValueSet-NumericResultIntNonPanicVS" name="Numeric Result Interpretation without panic values, value set"/>
+<artifact id="Observation/OrdinalLab-example" key="Observation-OrdinalLab-example" name="OrdinalLab-example"/>
+<artifact id="ValueSet/ordinal-value-code-value-set" key="ValueSet-ordinal-value-code-value-set" name="Ordinal Value Code value set"/>
+<artifact deprecated="true" id="ValueSet/organization-type-VS" key="ValueSet-organization-type-VS" name="organizationtypeVS"/>
+<artifact deprecated="true" id="ValueSet/sPO2BodyLocationVS" key="ValueSet-sPO2-Body-Location-VS" name="Oxygen Saturation Body Location value set"/>
+<artifact deprecated="true" id="Observation/oxygenSaturation-example" key="Observation-oxygenSaturation-example" name="oxygenSaturation-example"/>
+<artifact deprecated="true" id="StructureDefinition/oxygen-saturation-arterial-blood" key="Observation-Oxygen-Saturation-Arterial-Blood" name="Oxygen Saturation in Arterial blood, method not specified"/>
+<artifact deprecated="true" id="StructureDefinition/oxygen-saturation-arterial-blood-pulseOx" key="Observation-Oxygen-Saturation-Arteria-lBlood-Pulse-Ox" name="Oxygen Saturation in Arterial Blood by Pulse Oximetry"/>
+<artifact deprecated="true" id="Observation/oxygenSaturationPulseOx-example" key="Observation-oxygenSaturationPulseOx-example" name="oxygenSaturationPulseOx-example"/>
+<artifact deprecated="true" id="Patient/patient-example" key="Patient-patient-example" name="patient-example"/>
+<artifact deprecated="true" id="Practitioner/practitioner-example" key="Practitioner-practitioner-example" name="practitioner-example"/>
+<artifact id="Observation/QuantitativeLab-example" key="Observation-QuantitativeLab-example" name="QuantitativeLab-example"/>
+<artifact id="StructureDefinition/ref-range-nominal" key="StructureDefinition-ref-range-nominal" name="Reference Range Nominal"/>
+<artifact id="ValueSet/reference-range-nom-value-set" key="ValueSet-reference-range-nom-value-set" name="Reference Range Nominal value set"/>
+<artifact deprecated="true" id="StructureDefinition/respiratory-rate" key="Observation-Respiratory-Rate" name="Respiratory Rate"/>
+<artifact deprecated="true" id="Observation/respiratoryRate-example" key="Observation-respiratoryRate-example" name="respiratoryRate-example"/>
+<artifact deprecated="true" id="ValueSet/respiratoryRateMeasDeviceVS" key="ValueSet-respiratory-Rate-Meas-Device-VS" name="Respiratory Rate Measurement Device value set"/>
+<artifact deprecated="true" id="ValueSet/respiratoryRateMeasMethodVS" key="ValueSet-respiratory-Rate-Meas-Method-VS" name="Respiratory Rate Measurement Method value set"/>
+<artifact deprecated="true" id="StructureDefinition/SensorDescriptionExt" key="StructureDefinition-SensorDescriptionExt" name="Sensor Description"/>
+<artifact deprecated="true" id="ValueSet/sensorDescriptionVS" key="ValueSet-sensor-Description-VS" name="Sensor Description value set"/>
+<artifact deprecated="true" id="StructureDefinition/SleepStatusExt" key="StructureDefinition-SleepStatusExt" name="Sleep Status"/>
+<artifact deprecated="true" id="ValueSet/sleepStatusVS" key="ValueSet-sleep-Status-VS" name="Sleep Status value set"/>
+<artifact deprecated="true" id="CodeSystem/SolorTemporaryCodeSystem" key="CodeSystem-Solor-Temporary-Code-System" name="SNOMED CT Solor Extension Temporary Code System"/>
+<artifact id="ValueSet/StdLabObsCoded-value-set" key="ValueSet-StdLabObsCoded-value-set" name="Standard Coded Lab Observation Code value set"/>
+<artifact id="ValueSet/StdLabObsOrdinal-value-set" key="ValueSet-StdLabObsOrdinal-value-set" name="Standard Coded Lab Observation Code value set"/>
+<artifact id="StructureDefinition/standard-lab-obs-coded" key="StructureDefinition-standard-lab-obs-coded" name="Standard Lab Obs Coded"/>
+<artifact id="StructureDefinition/standard-lab-obs-document" key="StructureDefinition-standard-lab-obs-document" name="Standard Lab Obs Document"/>
+<artifact id="StructureDefinition/standard-lab-obs-narrative" key="StructureDefinition-standard-lab-obs-narrative" name="Standard Lab Obs Narrative"/>
+<artifact id="ValueSet/standard-lab-obs-narrative-value-set" key="ValueSet-standard-lab-obs-narrative-value-set" name="Standard Lab Obs Narrative value set"/>
+<artifact id="StructureDefinition/standard-lab-obs-ordinal" key="StructureDefinition-standard-lab-obs-ordinal" name="Standard Lab Obs Ordinal"/>
+<artifact id="StructureDefinition/standard-lab-obs-quant" key="StructureDefinition-standard-lab-obs-quant" name="Standard Lab Obs Quantitative"/>
+<artifact id="ValueSet/standard-lab-obs-quantitative-value-set" key="ValueSet-standard-lab-obs-quantitative-value-set" name="Standard Lab Obs Quantitative Code value set"/>
+<artifact id="StructureDefinition/standard-lab-obs-titer" key="StructureDefinition-standard-lab-obs-titer" name="Standard Lab Obs Titer"/>
+<artifact id="StructureDefinition/standard-lab-obs" key="StructureDefinition-standard-lab-obs" name="Standard Laboratory Observation Base profile"/>
+<artifact deprecated="true" id="ValueSet/TemperatureUOMVS" key="ValueSet-TemperatureUOMVS" name="Temperature Units of Measure value set"/>
+<artifact id="ValueSet/titer-lab-codes-value-set" key="ValueSet-titer-lab-codes-value-set" name="Titer Lab Codes value set"/>
+<artifact id="Observation/TiterLab-example" key="Observation-TiterLab-example" name="TiterLab-example"/>
+<artifact deprecated="true" id="StructureDefinition/twenty-four-hour-blood-pressure" key="Observation-Twenty-Four-Hour-Blood-Pressure" name="Twenty Four Hour Blood Pressure"/>
+<artifact deprecated="true" id="Observation/TwentyFourHourBloodPressure-example" key="Observation-TwentyFourHourBloodPressure-example" name="TwentyFourHourBloodPressure-example"/>
+<artifact id="ValueSet/units-of-measure-value-set" key="ValueSet-units-of-measure-value-set" name="Units of Measure value set"/>
+<artifact deprecated="true" id="ValueSet/vitalSignAssociatedPrecondVS" key="ValueSet-vital-Sign-Associated-Precond-VS" name="Vital Sign Associated Precondition value set"/>
+<artifact deprecated="true" id="StructureDefinition/vital-signs-panel" key="Observation-Vital-Signs-Panel" name="Vital Signs Panel"/>
+<artifact deprecated="true" id="Observation/VitalSignsPanel-example" key="Observation-VitalSignsPanel-example" name="VitalSignsPanel-example"/>
+<artifact deprecated="true" id="ValueSet/weightMeasurementDeviceVS" key="ValueSet-weight-Measurement-Device-VS" name="Weight Measurement Device value set"/>
+<artifact deprecated="true" id="ValueSet/WeightUOMVS" key="ValueSet-WeightUOMVS" name="Weight Units of Measure value set"/>
+<page key="many" name="(many)"/>
+<page key="NA" name="(NA)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="downloads" name="Downloads"/>
+<page key="all-examples" name="Examples"/>
+<page deprecated="true" key="general-guidance" name="General Guidance"/>
+<page key="home" name="Home"/>
+<page key="profiles" name="Profiles"/>
+<page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminology"/>
+</specification>
