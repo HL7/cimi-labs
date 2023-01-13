@@ -1,3 +1,9 @@
+---
+title: Standard Lab Obs Ordinal
+layout: default
+active: standard-lab-obs-ordinal
+---
+
 ### Scope
 
 The Standard Lab Ordinal profile is intended to be used for laboratory tests where the results could be described as terms in a coding system, with displays and identifiers. This is similar to the Standard Lab Coded profile but is constrained to ordinal lab tests only.

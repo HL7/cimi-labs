@@ -1,3 +1,9 @@
+---
+title: Standard Lab Obs
+layout: default
+active: standard-lab-obs
+---
+
 ### Scope
 
 The Standard Lab Observation profile is an abstract base profile used to inform its subtypes.  This profile contains all of the common extensions and constraints that apply to all of the specfic subtypes, coded, narrative, ordinal, quantitative, and titer.

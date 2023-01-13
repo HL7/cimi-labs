@@ -1,3 +1,9 @@
+---
+title: Standard Lab Obs Document
+layout: default
+active: standard-lab-obs-document
+---
+
 ### Scope
 
 The Standard Document Lab Profile is intended to be used for lab tests who's values are reported using an attached document.  This profile is based on the DiagnosticReport resource

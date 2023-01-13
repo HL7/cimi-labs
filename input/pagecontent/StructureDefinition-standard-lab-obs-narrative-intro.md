@@ -1,3 +1,9 @@
+---
+title: Standard Lab Obs Narrative
+layout: default
+active: standard-lab-obs-narrative
+---
+
 ### Scope
 
 The Standard Lab Coded Narrative profile is intended to be used for laboratory tests where the results are reported using strings of text.

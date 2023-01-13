@@ -1,3 +1,9 @@
+---
+title: Standard Lab Obs Coded
+layout: default
+active: standard-lab-obs-coded
+---
+
 ### Scope
 
 The Standard Lab Coded Observation profile is intended to be used for laboratory tests where the results could be describes as terms in a coding system, with displays and identifiers. This profile excludes ordinal types of results which may also be described by a coding system.

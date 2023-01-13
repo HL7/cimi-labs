@@ -1,3 +1,9 @@
+---
+title: Standard Lab Obs Titer
+layout: default
+active: standard-lab-obs-titer
+---
+
 ### Scope
 
 The Standard Lab Titer Observation profile is intended to be used for labratory tests who's values could be reported using a numerator and denominator, or in otherwords a ratio of a constituent to a whole volume.  These results are numeric but do not typically have units of measure however, LOINC provides example units of measure of "{titer}".

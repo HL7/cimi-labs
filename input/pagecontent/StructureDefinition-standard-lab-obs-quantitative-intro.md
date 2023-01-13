@@ -1,3 +1,9 @@
+---
+title: Standard Lab Obs Quantitative
+layout: default
+active: standard-lab-obs-quant
+---
+
 ### Scope
 
 The Standard Lab Quantitative profile is intended to be used for laboratory tests where the results are numeric, with varying levels of precision.  Many lab tests have numeric results that are whole integers only, e.g. serum glucose.  others are more precise, e.g. serum potassium of 5.2.
