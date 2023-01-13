@@ -95,7 +95,7 @@
 <artifact deprecated="true" id="ValueSet/sleepStatusVS" key="ValueSet-sleep-Status-VS" name="Sleep Status value set"/>
 <artifact deprecated="true" id="CodeSystem/SolorTemporaryCodeSystem" key="CodeSystem-Solor-Temporary-Code-System" name="SNOMED CT Solor Extension Temporary Code System"/>
 <artifact id="ValueSet/StdLabObsCoded-value-set" key="ValueSet-StdLabObsCoded-value-set" name="Standard Coded Lab Observation Code value set"/>
-<artifact id="ValueSet/StdLabObsOrdinal-value-set" key="ValueSet-StdLabObsOrdinal-value-set" name="Standard Coded Lab Observation Code value set"/>
+<artifact id="ValueSet/StdLabObsOrdinal-value-set" key="ValueSet-StdLabObsOrdinal-value-set" name="Standard Coded Ordinal Lab Observation Code value set"/>
 <artifact id="StructureDefinition/standard-lab-obs-coded" key="StructureDefinition-standard-lab-obs-coded" name="Standard Lab Obs Coded"/>
 <artifact id="StructureDefinition/standard-lab-obs-document" key="StructureDefinition-standard-lab-obs-document" name="Standard Lab Obs Document"/>
 <artifact id="StructureDefinition/standard-lab-obs-narrative" key="StructureDefinition-standard-lab-obs-narrative" name="Standard Lab Obs Narrative"/>

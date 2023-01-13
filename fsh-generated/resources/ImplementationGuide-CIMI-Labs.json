@@ -194,7 +194,7 @@
         "reference": {
           "reference": "ValueSet/StdLabObsOrdinal-value-set"
         },
-        "name": "Standard Coded Lab Observation Code value set",
+        "name": "Standard Coded Ordinal Lab Observation Code value set",
         "description": "A set of LOINC codes that describe lab tests that are nominal.",
         "exampleBoolean": false
       },
