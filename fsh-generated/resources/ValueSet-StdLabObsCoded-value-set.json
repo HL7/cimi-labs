@@ -14,14 +14,14 @@
         "system": "http://loinc.org",
         "filter": [
           {
-            "property": "scale",
+            "property": "CLASSTYPE",
             "op": "=",
-            "value": "Nom"
+            "value": "1"
           },
           {
-            "property": "Type",
+            "property": "SCALE_TYP",
             "op": "=",
-            "value": "Lab"
+            "value": "Nom"
           }
         ]
       }

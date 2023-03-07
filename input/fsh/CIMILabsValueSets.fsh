@@ -3,14 +3,14 @@ Id: StdLabObsCoded-value-set
 Title: "Standard Coded Lab Observation Code value set"
 Description: "A set of LOINC codes that describe lab tests that are nominal."
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
-* include codes from system LNC where scale = "Nom" and Type = "Lab"
+* include codes from system LNC where CLASSTYPE = "1" and SCALE_TYP = #Nom
 
 ValueSet: StdLabObsOrdCode_VSET
 Id: StdLabObsOrdinal-value-set 
 Title: "Standard Coded Ordinal Lab Observation Code value set"
 Description: "A set of LOINC codes that describe lab tests that are nominal."
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
-* include codes from system LNC where scale = "Ord" and Type = "Lab"
+* include codes from system LNC where SCALE_TYP = #Ord and CLASSTYPE = "1"
 
 ValueSet: NullFlavor_VSET
 Id: null-flavor-value-set
@@ -64,7 +64,7 @@ Id: standard-lab-obs-narrative-value-set
 Title: "Standard Lab Obs Narrative value set"
 Description: "A set of LOINC codes that are used for lab tests with tex-based results."
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
-* include codes from system LNC where scale = "Nar" and Type = "Lab"
+* include codes from system LNC where SCALE_TYP = #Nar and CLASSTYPE = "1"
 
 ValueSet: OrdinalValueCode_VSET
 Id: ordinal-value-code-value-set
@@ -86,7 +86,7 @@ Id: standard-lab-obs-quantitative-value-set
 Title: "Standard Lab Obs Quantitative Code value set"
 Description: "A set of LOINC codes that are used to identify quantitative types of lab tests."
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
-* include codes from system LNC where scale = "Qn" and Type = "Lab"
+* include codes from system LNC where SCALE_TYP = #Qn and CLASSTYPE = "1"
 
 ValueSet: UnitsOfMeasure_VSET
 Id: units-of-measure-value-set
@@ -112,7 +112,7 @@ Id: titer-lab-codes-value-set
 Title: "Titer Lab Codes value set"
 Description: "A set of LOINC codes used to identify titer laboratory tests."
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
-* include codes from system LNC where Property = "Ratio" and Type = "Lab"
+* include codes from system LNC where Property = #Ratio and CLASSTYPE = "1"
 
 ValueSet: RefRangeNom_VSET
 Id: reference-range-nom-value-set

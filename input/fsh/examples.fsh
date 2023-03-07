@@ -102,7 +102,7 @@ Usage: #example
 * performer[performingLaboratory].display = "Acme Psuedo Lab"
 * performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
 
-Instance: DocumentLab-example
+/* Instance: DocumentLab-example
 InstanceOf: StandardLabObsDocument
 Description: "An example of a lab test where the rsults are reported using a document."
 Usage: #example
@@ -120,5 +120,4 @@ Usage: #example
 * performer[responsibleObserver].display = "LabTech 007"
 * performer[performingLaboratory].display = "Acme Psuedo Lab"
 * performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
-* presentedForm.contentType = #PDF 
-* presentedForm.url = "http://example.org/PatientBoneMarrowReport"
+* extension[lab-document].extension[document-url].value = "http://example.org/PatientBoneMarrowReport" */

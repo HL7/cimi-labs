@@ -1,5 +1,5 @@
 Profile: StandardLabObs
-Parent: Observation
+Parent: USCoreLab
 Id: standard-lab-obs
 Title: "Standard Laboratory Observation Base profile"
 Description: "An abstract base profile on which other sub-types will be built."

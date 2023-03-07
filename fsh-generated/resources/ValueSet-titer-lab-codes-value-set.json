@@ -17,6 +17,11 @@
             "property": "Property",
             "op": "=",
             "value": "Ratio"
+          },
+          {
+            "property": "CLASSTYPE",
+            "op": "=",
+            "value": "1"
           }
         ]
       }

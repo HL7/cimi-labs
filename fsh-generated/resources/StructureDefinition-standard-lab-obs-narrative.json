@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "standard-lab-obs-narrative",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-narrative",
   "version": "4.0.1",
   "name": "StandardLabObsNarrative",
@@ -19,6 +9,11 @@
   "description": "The base profile for all LOINC lab tests that have textual results in a string format.",
   "fhirVersion": "4.0.1",
   "mapping": [
+    {
+      "identity": "argonaut-dq-dstu2",
+      "uri": "http://unknown.org/Argonaut-DQ-DSTU2",
+      "name": "Argonaut-DQ-DSTU2"
+    },
     {
       "identity": "workflow",
       "uri": "http://hl7.org/fhir/workflow",

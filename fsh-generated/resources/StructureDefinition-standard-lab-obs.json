@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "standard-lab-obs",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs",
   "version": "4.0.1",
   "name": "StandardLabObs",
@@ -19,6 +9,11 @@
   "description": "An abstract base profile on which other sub-types will be built.",
   "fhirVersion": "4.0.1",
   "mapping": [
+    {
+      "identity": "argonaut-dq-dstu2",
+      "uri": "http://unknown.org/Argonaut-DQ-DSTU2",
+      "name": "Argonaut-DQ-DSTU2"
+    },
     {
       "identity": "workflow",
       "uri": "http://hl7.org/fhir/workflow",
@@ -53,7 +48,7 @@
   "kind": "resource",
   "abstract": true,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
   "derivation": "constraint",
   "differential": {
     "element": [

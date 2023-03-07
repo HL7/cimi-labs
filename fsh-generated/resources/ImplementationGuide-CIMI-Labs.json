@@ -112,6 +112,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/attached-document"
+        },
+        "name": "Attached Document",
+        "description": "An extension for attaching a document to an observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/document-url"
+        },
+        "name": "Document URL",
+        "description": "An extension that records the URL for an attached document.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/lab-document"
+        },
+        "name": "Lab Document extension",
+        "description": "This extension is to create a means by which a laboratory test that has been reported using an attached document may be done.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ref-range-nominal"
         },
         "name": "Reference Range Nominal",
@@ -229,14 +253,6 @@
         "name": "CodedLab-example",
         "description": "An example of a coded lab test.",
         "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-coded"
-      },
-      {
-        "reference": {
-          "reference": "DiagnosticReport/DocumentLab-example"
-        },
-        "name": "DocumentLab-example",
-        "description": "An example of a lab test where the rsults are reported using a document.",
-        "exampleCanonical": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-document"
       },
       {
         "reference": {

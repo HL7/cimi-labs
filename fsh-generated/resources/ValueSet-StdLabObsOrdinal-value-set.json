@@ -14,9 +14,14 @@
         "system": "http://loinc.org",
         "filter": [
           {
-            "property": "scale",
+            "property": "SCALE_TYP",
             "op": "=",
             "value": "Ord"
+          },
+          {
+            "property": "CLASSTYPE",
+            "op": "=",
+            "value": "1"
           }
         ]
       }
