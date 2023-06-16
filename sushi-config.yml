@@ -7,7 +7,7 @@ canonical: http://hl7.org/fhir/us/cimi-labs
 canonicalBase: http://hl7.org/fhir/us/cimi-labs
 version: 4.0.1
 name: CIMILaboratoryResults
-title: CIMI Base Laboratory Class FHIR Profiles
+title: Laboratory Base Class FHIR Profiles
 status: draft
 publisher:
   -
