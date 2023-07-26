@@ -19,7 +19,7 @@ Description: "An abstract base profile on which other sub-types will be built."
 * identifier[placerOrderNumber].type = IDTYPE#PLAC
 //slicing rules for performer
 * performer only Reference(Practitioner or Organization)
-* performer ^slicing.discriminator.type = #pattern
+* performer ^slicing.discriminator.type = #type
 * performer ^slicing.discriminator.path = "Observation.performer"
 * performer ^slicing.rules = #open
 * performer MS
