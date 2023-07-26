@@ -71,13 +71,13 @@
   "valueString": "Red cells are mostly normochromic/nomrocytic with 10% having siderotic granule inclusions.",
   "performer": [
     {
-      "display": "LabTech 007"
+      "reference": "Practitioner/LabTech"
     },
     {
-      "display": "Acme Psuedo Lab"
+      "reference": "Organization/ACMELab"
     },
     {
-      "display": "Dr. Dre"
+      "reference": "Practitioner/DrDr"
     }
   ]
 }

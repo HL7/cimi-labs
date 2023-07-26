@@ -72,6 +72,22 @@
       },
       {
         "reference": {
+          "reference": "Organization/ACMELab"
+        },
+        "name": "ACMELab",
+        "description": "An example of a performing laboratory",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Organization/ASCP"
+        },
+        "name": "ASCP",
+        "description": "An example of an organization using the American Society for Clinical Pathology",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/attached-document"
         },
         "name": "Attached Document",
@@ -96,6 +112,14 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/DrDr"
+        },
+        "name": "DrDr",
+        "description": "An example of a physician practitioner",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/lab-document"
         },
         "name": "Lab Document extension",
@@ -109,6 +133,14 @@
         "name": "Lab Result Code value set",
         "description": "A set of LOINC codes that describe laboratory tests.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/LabTech"
+        },
+        "name": "LabTech",
+        "description": "An example of a clinical laboratorian practitioner.",
+        "exampleBoolean": true
       },
       {
         "reference": {

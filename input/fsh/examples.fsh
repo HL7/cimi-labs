@@ -13,9 +13,9 @@ Usage: #example
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver].display = "LabTech 007"
-* performer[performingLaboratory].display = "Acme Psuedo Lab"
-* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
+* performer[responsibleObserver] = Reference(LabTech)
+* performer[performingLaboratory] = Reference(ACMELab)
+* performer[performingOrganizationMedicalDirector] = Reference(DrDr)
 
 Instance: CodedLab-example
 InstanceOf: StandardLabObsCoded
@@ -33,9 +33,9 @@ Usage: #example
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver].display = "LabTech 007"
-* performer[performingLaboratory].display = "Acme Psuedo Lab"
-* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
+* performer[responsibleObserver] = Reference(LabTech)
+* performer[performingLaboratory] = Reference(ACMELab)
+* performer[performingOrganizationMedicalDirector] = Reference(DrDr)
 
 Instance: OrdinalLab-example
 InstanceOf: StandardLabObsOrdinal
@@ -53,9 +53,9 @@ Usage: #example
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver].display = "LabTech 007"
-* performer[performingLaboratory].display = "Acme Psuedo Lab"
-* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
+* performer[responsibleObserver] = Reference(LabTech)
+* performer[performingLaboratory] = Reference(ACMELab)
+* performer[performingOrganizationMedicalDirector] = Reference(DrDr)
 
 Instance: NarrativeLab-example
 InstanceOf: StandardLabObsNarrative
@@ -72,9 +72,9 @@ Usage: #example
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver].display = "LabTech 007"
-* performer[performingLaboratory].display = "Acme Psuedo Lab"
-* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
+* performer[responsibleObserver] = Reference(LabTech)
+* performer[performingLaboratory] = Reference(ACMELab)
+* performer[performingOrganizationMedicalDirector] = Reference(DrDr)
 
 Instance: TiterLab-example
 InstanceOf: StandardLabObsTiter
@@ -93,9 +93,9 @@ Usage: #example
 * identifier[accessionIdentifier].value = "TH56231"
 * identifier[fillerOrderNumber].value = "12093785"
 * identifier[placerOrderNumber].value = "58739021"
-* performer[responsibleObserver].display = "LabTech 007"
-* performer[performingLaboratory].display = "Acme Psuedo Lab"
-* performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
+* performer[responsibleObserver] = Reference(LabTech)
+* performer[performingLaboratory] = Reference(ACMELab)
+* performer[performingOrganizationMedicalDirector] = Reference(DrDr)
 
 /* Instance: DocumentLab-example
 InstanceOf: StandardLabObsDocument
@@ -116,3 +116,38 @@ Usage: #example
 * performer[performingLaboratory].display = "Acme Psuedo Lab"
 * performer[performingOrganizationMedicalDirector].display = "Dr. Dre"
 * extension[lab-document].extension[document-url].value = "http://example.org/PatientBoneMarrowReport" */
+
+Instance: LabTech
+InstanceOf: Practitioner
+Description: "An example of a clinical laboratorian practitioner."
+Usage: #example
+* identifier.value = "2376"
+* name.text = "Sally LabTech"
+* qualification.code = Cert#CER 
+* qualification.issuer = Reference(ASCP)
+
+Instance: DrDr
+InstanceOf: Practitioner
+Description: "An example of a physician practitioner"
+Usage: #example
+* identifier.value = "1357924"
+* name.text = "Dr. Doctor"
+* qualification.code = Cert#MD 
+
+Instance: ASCP
+InstanceOf: Organization
+Description: "An example of an organization using the American Society for Clinical Pathology"
+Usage: #example
+* name = "American Society for Clinical Pathology"
+
+Instance: ACMELab
+InstanceOf: Organization
+Description: "An example of a performing laboratory"
+Usage: #example
+* name = "ACME Clinical Laboratories"
+* alias = "ACME Lab"
+* address.line = "101 South Main St."
+* address.city = "Anytown"
+* address.state = "MyState"
+* address.postalCode = "10101"
+* address.country = "USA"

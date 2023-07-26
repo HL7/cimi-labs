@@ -78,13 +78,13 @@
   },
   "performer": [
     {
-      "display": "LabTech 007"
+      "reference": "Practitioner/LabTech"
     },
     {
-      "display": "Acme Psuedo Lab"
+      "reference": "Organization/ACMELab"
     },
     {
-      "display": "Dr. Dre"
+      "reference": "Practitioner/DrDr"
     }
   ]
 }
