@@ -132,7 +132,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "Observation.performer"
             }
           ],
