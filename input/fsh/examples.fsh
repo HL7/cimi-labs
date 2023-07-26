@@ -4,7 +4,6 @@ Description: "An example of a quantitative lab test."
 Usage: #example
 * status = #final
 * category = ObsCat#laboratory
-* category.text = "Laboratory"
 * code = LNC#2345-7
 * code.text = "Glucose [Mass/volume] in Serum or Plasma"
 * subject.display = "Young, Female 2345"
@@ -24,7 +23,6 @@ Description: "An example of a coded lab test."
 Usage: #example
 * status = #final
 * category = ObsCat#laboratory
-* category.text = "Laboratory"
 * code = LNC#58437-5
 * code.text = "Microorganisms seen [Type] in Urine sediment by Light microscopy"
 * subject.display = "Young, Female 2345"
@@ -45,7 +43,6 @@ Description: "An example of an ordinal lab test."
 Usage: #example
 * status = #final
 * category = ObsCat#laboratory
-* category.text = "Laboratory"
 * code = LNC#87829-8
 * code.text = "Bacteria [Presence] in Urine"
 * subject.display = "Young, Female 2345"
@@ -66,7 +63,6 @@ Description: "An example of a narrative lab test."
 Usage: #example
 * status = #final
 * category = ObsCat#laboratory
-* category.text = "Laboratory"
 * code = LNC#53974-2
 * code.text = "Erythrocyte morphology [Interpretation] in Urine sediment by Light microscopy Narrative"
 * subject.display = "Young, Female 2345"
@@ -86,7 +82,6 @@ Description: "An example of a titer lab test."
 Usage: #example
 * status = #final
 * category = ObsCat#laboratory
-* category.text = "Laboratory"
 * code = LNC#87925-4
 * code.text = "Reagin Ab [Titer] in Cerebral spinal fluid by RPR"
 * subject.display = "Young, Female 2345"

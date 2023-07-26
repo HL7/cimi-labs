@@ -2,10 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "standard-lab-obs",
   "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs",
-  "version": "4.0.1",
   "name": "StandardLabObs",
   "title": "Standard Laboratory Observation Base profile",
-  "status": "active",
+  "status": "draft",
   "description": "An abstract base profile on which other sub-types will be built.",
   "fhirVersion": "4.0.1",
   "mapping": [

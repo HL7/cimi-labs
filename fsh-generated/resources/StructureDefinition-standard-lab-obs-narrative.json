@@ -2,10 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "standard-lab-obs-narrative",
   "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-narrative",
-  "version": "4.0.1",
   "name": "StandardLabObsNarrative",
   "title": "Standard Lab Obs Narrative",
-  "status": "active",
+  "status": "draft",
   "description": "The base profile for all LOINC lab tests that have textual results in a string format.",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "AbnormalInterpretation_VSET",
   "id": "abnormal-interpretation-value-set",
   "title": "Abnmormal Interpretation value set",
   "description": "A set of Snomed CT codes that describe the abnormality of a lab test result.",
-  "version": "4.0.1",
   "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/abnormal-interpretation-value-set",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "compose": {

@@ -2,10 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "standard-lab-obs-quant",
   "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-quant",
-  "version": "4.0.1",
   "name": "StandardLabObsQuantitative",
   "title": "Standard Lab Obs Quantitative",
-  "status": "active",
+  "status": "draft",
   "description": "An abstract laboratory observation profile for quantitative types of lab tests.",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -63,16 +62,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
             "code": "Quantity"
@@ -80,14 +69,8 @@
         ]
       },
       {
-        "id": "Observation.valueQuantity",
-        "path": "Observation.valueQuantity",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
         "binding": {
           "strength": "extensible",
           "valueSet": "http://hl7.org/fhir/us/cimi-labs/ValueSet/units-of-measure-value-set"

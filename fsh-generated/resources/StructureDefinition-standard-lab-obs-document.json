@@ -2,10 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "standard-lab-obs-document",
   "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-document",
-  "version": "4.0.1",
   "name": "StandardLabObsDocument",
   "title": "Standard Lab Obs Document",
-  "status": "active",
+  "status": "draft",
   "description": "A base profile for all LOINC lab tests that have an attached document or structured text as the result.",
   "fhirVersion": "4.0.1",
   "mapping": [

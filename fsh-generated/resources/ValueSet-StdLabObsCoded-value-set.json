@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "StdLabObsCoded_VSET",
   "id": "StdLabObsCoded-value-set",
   "title": "Standard Coded Lab Observation Code value set",
   "description": "A set of LOINC codes that describe lab tests that are nominal.",
-  "version": "4.0.1",
   "url": "http://hl7.org/fhir/us/cimi-labs/ValueSet/StdLabObsCoded-value-set",
   "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
   "compose": {

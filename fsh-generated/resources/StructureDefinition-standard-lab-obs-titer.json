@@ -2,10 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "standard-lab-obs-titer",
   "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-titer",
-  "version": "4.0.1",
   "name": "StandardLabObsTiter",
   "title": "Standard Lab Obs Titer",
-  "status": "active",
+  "status": "draft",
   "description": "The base profile for all LOINC lab tests that have titer results.",
   "fhirVersion": "4.0.1",
   "mapping": [

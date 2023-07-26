@@ -2,10 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "standard-lab-obs-coded",
   "url": "http://hl7.org/fhir/us/cimi-labs/StructureDefinition/standard-lab-obs-coded",
-  "version": "4.0.1",
   "name": "StandardLabObsCoded",
   "title": "Standard Lab Obs Coded",
-  "status": "active",
+  "status": "draft",
   "description": "The base profile for all lab tests with coded results (excluding ordinal).",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -63,27 +62,11 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
             "code": "CodeableConcept"
           }
-        ]
-      },
-      {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "extensible",
           "valueSet": "http://hl7.org/fhir/us/cimi-labs/ValueSet/lab-result-code-value-set"
