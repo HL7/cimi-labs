@@ -122,7 +122,7 @@ InstanceOf: Practitioner
 Description: "An example of a clinical laboratorian practitioner."
 Usage: #example
 * identifier.value = "2376"
-* name = "Sally LabTech"
+* name.text = "Sally LabTech"
 * qualification.code = Cert#CER 
 * qualification.issuer = Reference(ASCP)
 
@@ -131,7 +131,7 @@ InstanceOf: Practitioner
 Description: "An example of a physician practitioner"
 Usage: #example
 * identifier.value = "1357924"
-* name = "Dr. Doctor"
+* name.text = "Dr. Doctor"
 * qualification.code = Cert#MD 
 
 Instance: ASCP
