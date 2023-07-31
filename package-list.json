@@ -1,12 +1,12 @@
 {
-    "package-id": "cimi-labs",
-    "title": "CIMI Base Laboratory Class FHIR Profiles",
-    "canonical": "http://hl7.org/fhir/us/cimi-labs",
+    "package-id": "hl7.fhir.us.cimilabs",
+    "title": "Base Laboratory Class FHIR Profiles",
+    "canonical": "http://hl7.org/fhir/us/cimilabs",
     "introduction": "Logical, abstract laboratory profiles created and maintained by the CIMI working group and sponsored by the OO working group.",
     "list": [{
             "version": "current",
             "desc": "Continuous Integration Build (latest in version control)",
-            "path": "http://hl7.org/fhir/us/cimi-labs",
+            "path": "http://hl7.org/fhir/us/cimilabs",
             "status": "ci-build",
             "current": true
         }
