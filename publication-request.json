@@ -1,13 +1,13 @@
 {
-    "package-id": "hl7.fhir.us.cimilabs",
+    "package-id": "hl7.fhir.us.cimi-labs",
     "version": "0.1.0",
-    "path": "http://hl7.org/fhir/us/cimilabs",
+    "path": "http://hl7.org/fhir/us/cimi-labs",
     "mode": "working",
     "status": "ballot",
     "desc": "The initial ballot version",
     "first": "true",
     "title": "Base Laboratory Class FHIR Profiles",
-    "ci-build": "http://build.fhir.org/ig/HL7/cimilabs/branches/master/index.html",
+    "ci-build": "http://build.fhir.org/ig/HL7/cimi-labs/branches/master/index.html",
     "category": "Orders and Observations",
     "indroduction": "The creation of logical models that describe general laboratory models, such as quantitative, ordinal, coded, etc.  Also the creation of the specific logical models and FHIR profiles for the LOINC top 2000 codes."
 }

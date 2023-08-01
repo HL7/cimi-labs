@@ -12,3 +12,4 @@ SUSHI-GENERATED-FILES.md
 *.jar
 
 /fsh-generated**
+/fhs-generated/resources**
