@@ -3,12 +3,22 @@
     "title": "Base Laboratory Class FHIR Profiles",
     "canonical": "http://hl7.org/fhir/us/cimi-labs",
     "introduction": "Logical, abstract laboratory profiles created and maintained by the CIMI working group and sponsored by the OO working group.",
-    "list": [{
+    "list": [
+        {
             "version": "current",
             "desc": "Continuous Integration Build (latest in version control)",
             "path": "http://hl7.org/fhir/us/cimi-labs",
             "status": "ci-build",
             "current": true
+        },
+        {
+            "version": "0.1",
+            "fhirVersion": "4.0.1",
+            "date": "2023-08-04",
+            "desc": "STU1 Ballot",
+            "path": "http://hl7.org/fhir/us/cimi-labs/2023Sep",
+            "status": "ballot",
+            "sequence": "STU1"
         }
     ]
 }
