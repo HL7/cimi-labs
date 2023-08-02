@@ -1,5 +1,5 @@
 {
-    "package-id": "hl7.fhir.us.cimilabs",
+    "package-id": "hl7.fhir.us.cimi-labs",
     "version": "0.1",
     "path": "http://hl7.org/fhir/us/cimi-labs/2023Sep",
     "mode": "working",
